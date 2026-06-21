@@ -6,7 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://b7jek5jhso1gy" path="res://scenes/quests/story_quests/Bill the Pill/3_stealth/stealth_components/New Piskel-1.png (1) (4).png" id="2_8hb2i"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rfo6d"]
-load_path = "res://.godot/imported/champ_player_attack_01.png-4bba8c07cb3c053792322ad4bd77546a.ctex"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_n1xfu"]
 atlas = SubResource("CompressedTexture2D_rfo6d")

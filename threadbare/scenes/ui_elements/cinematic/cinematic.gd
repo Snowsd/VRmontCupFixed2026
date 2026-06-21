@@ -27,7 +27,7 @@ signal cinematic_finished
 
 
 func _ready() -> void:
-	if not GameState.intro_dialogue_shown:
+	if true:
 		DialogueManager.show_dialogue_balloon(dialogue, "", [self])
 		await DialogueManager.dialogue_ended
 		cinematic_finished.emit()
