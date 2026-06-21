@@ -1,0 +1,161 @@
+[gd_scene format=4 uid="uid://dvtsxw4ib6v1d"]
+
+[ext_resource type="AudioStream" uid="uid://df7ldbesilfry" path="res://assets/first_party/music/Threadbare Loop_Main_Bridge_02.ogg" id="1_m7ukv"]
+[ext_resource type="TileSet" uid="uid://bo4jyvl3lcww1" path="res://scenes/quests/story_quests/champ/champ_tileset.tres" id="1_xxoe7"]
+[ext_resource type="Texture2D" uid="uid://uck435sfeeac" path="res://scenes/quests/story_quests/champ/0_intro/intro_components/champ_intro_image.png" id="2_u4i0h"]
+[ext_resource type="Texture2D" uid="uid://bka66bneqlx06" path="res://scenes/quests/story_quests/champ/tiles/assets/poster_bigfoot.png" id="2_ufx21"]
+[ext_resource type="Texture2D" uid="uid://ujqhbghqjhdq" path="res://scenes/quests/story_quests/champ/tiles/assets/poster_kraken.png" id="3_kpqku"]
+[ext_resource type="SpriteFrames" uid="uid://ctjbkxw0r2f2i" path="res://scenes/quests/story_quests/champ/player_components/champ_player.tres" id="3_ufx21"]
+[ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="4_kpqku"]
+[ext_resource type="Texture2D" uid="uid://ccemoeu8477od" path="res://scenes/quests/story_quests/champ/tiles/assets/poster_yeti.png" id="4_m7ukv"]
+[ext_resource type="Resource" uid="uid://dqj53ffq0tgqd" path="res://scenes/quests/story_quests/champ/0_intro/intro_components/champ_intro.dialogue" id="5_m7ukv"]
+[ext_resource type="Texture2D" uid="uid://dml1odsg20jgn" path="res://scenes/quests/story_quests/champ/tiles/assets/tape.png" id="6_kpqku"]
+[ext_resource type="PackedScene" uid="uid://2rbpl811wlv1" path="res://scenes/game_elements/props/background_music/background_music.tscn" id="10_43j7a"]
+
+[sub_resource type="Animation" id="Animation_43j7a"]
+resource_name = "walk_on"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_w33xd"]
+_data = {
+&"walk_on": SubResource("Animation_43j7a")
+}
+
+[node name="Intro" type="Node2D" unique_id=1688566328]
+
+[node name="TileMapLayers" type="Node2D" parent="." unique_id=1936424711]
+
+[node name="RoomBackground" type="TileMapLayer" parent="TileMapLayers" unique_id=1023218596]
+tile_map_data = PackedByteArray("AAAAAAYADwAAAAAAAAAAAAcADwAAAAEAAAAAAAgADwAAAAIAAAABAAYADwABAAAAAAABAAcADwABAAEAAAABAAgADwABAAIAAAACAAYADwACAAAAAAACAAcADwACAAEAAAACAAgADwACAAIAAAADAAYADwAAAAAAAAADAAcADwAAAAEAAAADAAgADwAAAAIAAAAEAAYADwABAAAAAAAEAAcADwABAAEAAAAEAAgADwABAAIAAAAFAAYADwACAAAAAAAFAAcADwACAAEAAAAFAAgADwACAAIAAAAGAAYADwAAAAAAAAAGAAcADwAAAAEAAAAGAAgADwAAAAIAAAAHAAYADwABAAAAAAAHAAcADwABAAEAAAAHAAgADwABAAIAAAAIAAYADwACAAAAAAAIAAcADwACAAEAAAAIAAgADwACAAIAAAAJAAYADwAAAAAAAAAJAAcADwAAAAEAAAAJAAgADwAAAAIAAAAKAAYADwABAAAAAAAKAAcADwABAAEAAAAKAAgADwABAAIAAAALAAYADwACAAAAAAALAAcADwACAAEAAAALAAgADwACAAIAAAAMAAYADwAAAAAAAAAMAAcADwAAAAEAAAAMAAgADwAAAAIAAAANAAYADwABAAAAAAANAAcADwABAAEAAAANAAgADwABAAIAAAAOAAYADwACAAAAAAAOAAcADwACAAEAAAAOAAgADwACAAIAAAAAAAUAEAABAAEAAAAAAAQAEAABAAEAAAAAAAMAEAABAAEAAAAAAAIAEAABAAEAAAAAAAEAEAABAAEAAAAAAAAAEAABAAEAAAABAAAAEAABAAEAAAACAAAAEAABAAEAAAADAAAAEAABAAEAAAAEAAAAEAABAAEAAAAFAAAAEAABAAEAAAAGAAAAEAABAAEAAAAHAAAAEAABAAEAAAAIAAAAEAABAAEAAAAJAAAAEAABAAEAAAAKAAAAEAABAAEAAAALAAAAEAABAAEAAAAMAAAAEAABAAEAAAANAAAAEAABAAEAAAAOAAAAEAABAAEAAAAOAAEAEAABAAEAAAAOAAIAEAABAAEAAAANAAIAEAABAAEAAAANAAMAEAABAAEAAAANAAQAEAABAAEAAAAOAAQAEAABAAEAAAAOAAUAEAABAAEAAAANAAUAEAABAAEAAAAMAAUAEAABAAEAAAAMAAQAEAABAAEAAAAOAAMAEAABAAEAAAANAAEAEAABAAEAAAAMAAEAEAABAAEAAAALAAEAEAABAAEAAAAKAAEAEAABAAEAAAAKAAIAEAABAAEAAAAKAAMAEAABAAEAAAAKAAQAEAABAAEAAAAKAAUAEAABAAEAAAALAAUAEAABAAEAAAALAAMAEAABAAEAAAALAAIAEAABAAEAAAAMAAIAEAABAAEAAAAMAAMAEAABAAEAAAALAAQAEAABAAEAAAAJAAUAEAABAAEAAAAIAAUAEAABAAEAAAAHAAUAEAABAAEAAAAGAAUAEAABAAEAAAAFAAUAEAABAAEAAAAEAAUAEAABAAEAAAADAAUAEAABAAEAAAACAAUAEAABAAEAAAABAAUAEAABAAEAAAABAAQAEAABAAEAAAABAAMAEAABAAEAAAABAAIAEAABAAEAAAABAAEAEAABAAEAAAACAAEAEAABAAEAAAACAAIAEAABAAEAAAACAAMAEAABAAEAAAACAAQAEAABAAEAAAADAAQAEAABAAEAAAADAAMAEAABAAEAAAADAAIAEAABAAEAAAADAAEAEAABAAEAAAAEAAEAEAABAAEAAAAEAAIAEAABAAEAAAAEAAMAEAABAAEAAAAEAAQAEAABAAEAAAAFAAQAEAABAAEAAAAGAAQAEAABAAEAAAAHAAQAEAABAAEAAAAIAAQAEAABAAEAAAAJAAQAEAABAAEAAAAJAAMAEAABAAEAAAAIAAMAEAABAAEAAAAHAAMAEAABAAEAAAAGAAMAEAABAAEAAAAFAAMAEAABAAEAAAAFAAIAEAABAAEAAAAGAAIAEAABAAEAAAAHAAIAEAABAAEAAAAIAAIAEAABAAEAAAAJAAIAEAABAAEAAAAJAAEAEAABAAEAAAAIAAEAEAABAAEAAAAHAAEAEAABAAEAAAAGAAEAEAABAAEAAAAFAAEAEAABAAEAAAAPAAYADwAAAAAAAAAPAAcADwAAAAEAAAAPAAgADwAAAAIAAAAQAAYADwABAAAAAAAQAAcADwABAAEAAAAQAAgADwABAAIAAAARAAYADwACAAAAAAARAAcADwACAAEAAAARAAgADwACAAIAAAAPAAAAEAABAAEAAAAQAAAAEAABAAEAAAARAAAAEAABAAEAAAARAAEAEAABAAEAAAARAAIAEAABAAEAAAARAAMAEAABAAEAAAARAAQAEAABAAEAAAARAAUAEAABAAEAAAAQAAUAEAABAAEAAAAPAAUAEAABAAEAAAAPAAQAEAABAAEAAAAQAAQAEAABAAEAAAAQAAMAEAABAAEAAAAPAAMAEAABAAEAAAAPAAIAEAABAAEAAAAQAAIAEAABAAEAAAAQAAEAEAABAAEAAAAPAAEAEAABAAEAAAAAAP//EAABAAEAAAABAP//EAABAAEAAAACAP//EAABAAEAAAADAP//EAABAAEAAAAEAP//EAABAAEAAAAFAP//EAABAAEAAAAGAP//EAABAAEAAAAHAP//EAABAAEAAAAIAP//EAABAAEAAAAJAP//EAABAAEAAAAKAP//EAABAAEAAAALAP//EAABAAEAAAAMAP//EAABAAEAAAANAP//EAABAAEAAAAOAP//EAABAAEAAAAPAP//EAABAAEAAAAQAP//EAABAAEAAAARAP//EAABAAEAAAA=")
+tile_set = ExtResource("1_xxoe7")
+
+[node name="Bigfoot" type="Sprite2D" parent="TileMapLayers" unique_id=1386370245]
+position = Vector2(414, 106)
+texture = ExtResource("2_ufx21")
+
+[node name="Kraken" type="Sprite2D" parent="TileMapLayers" unique_id=935180936]
+position = Vector2(570, 275)
+texture = ExtResource("3_kpqku")
+
+[node name="Yeti" type="Sprite2D" parent="TileMapLayers" unique_id=53237551]
+position = Vector2(726, 95)
+texture = ExtResource("4_m7ukv")
+
+[node name="Champ" type="Sprite2D" parent="TileMapLayers" unique_id=1587203463]
+position = Vector2(871, 265)
+texture = ExtResource("2_u4i0h")
+
+[node name="tapes" type="Node2D" parent="TileMapLayers" unique_id=590891495]
+
+[node name="Tape" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=1042725792]
+position = Vector2(474, 30)
+texture = ExtResource("6_kpqku")
+
+[node name="Tape2" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=353481467]
+position = Vector2(359, 31)
+rotation = -1.16588
+texture = ExtResource("6_kpqku")
+
+[node name="Tape5" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=1682695756]
+position = Vector2(467, 180)
+rotation = -4.37205
+texture = ExtResource("6_kpqku")
+
+[node name="Tape6" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=1770251994]
+position = Vector2(360, 183)
+rotation = -3.14159
+texture = ExtResource("6_kpqku")
+
+[node name="Tape3" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=1388427277]
+position = Vector2(783, 20)
+texture = ExtResource("6_kpqku")
+
+[node name="Tape4" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=440754825]
+position = Vector2(671, 22)
+rotation = -1.16588
+texture = ExtResource("6_kpqku")
+
+[node name="Tape7" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=1195527554]
+position = Vector2(780, 170)
+rotation = -4.40521
+texture = ExtResource("6_kpqku")
+
+[node name="Tape8" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=586901741]
+position = Vector2(674, 170)
+rotation = 3.36849
+texture = ExtResource("6_kpqku")
+
+[node name="Tape9" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=1283588512]
+position = Vector2(515, 198)
+rotation = -1.16588
+texture = ExtResource("6_kpqku")
+
+[node name="Tape10" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=1236506428]
+position = Vector2(624, 198)
+texture = ExtResource("6_kpqku")
+
+[node name="Tape11" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=1914361589]
+position = Vector2(517, 351)
+rotation = 3.23933
+texture = ExtResource("6_kpqku")
+
+[node name="Tape12" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=1434676230]
+position = Vector2(630, 349)
+rotation = -4.34063
+texture = ExtResource("6_kpqku")
+
+[node name="Tape13" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=514480790]
+position = Vector2(813.97, 338.438)
+rotation = 3.23933
+texture = ExtResource("6_kpqku")
+
+[node name="Tape14" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=374991381]
+position = Vector2(926, 339)
+rotation = -4.34063
+texture = ExtResource("6_kpqku")
+
+[node name="Tape15" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=1077148609]
+position = Vector2(929, 192)
+rotation = 0.258309
+texture = ExtResource("6_kpqku")
+
+[node name="Tape16" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=987375811]
+position = Vector2(821, 188)
+rotation = -1.2322
+texture = ExtResource("6_kpqku")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1897559220]
+position = Vector2(153, 366)
+zoom = Vector2(1.333, 1.333)
+limit_left = 0
+limit_top = 0
+limit_right = 960
+limit_bottom = 540
+position_smoothing_enabled = true
+editor_draw_limits = true
+
+[node name="OnTheGround" type="Node2D" parent="." unique_id=1229878229]
+y_sort_enabled = true
+
+[node name="Character" type="AnimatedSprite2D" parent="OnTheGround" unique_id=121002023]
+position = Vector2(421, 375)
+sprite_frames = ExtResource("3_ufx21")
+animation = &"defeated"
+autoplay = "idle"
+frame = 3
+frame_progress = 0.751211
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="OnTheGround" unique_id=664724093]
+root_node = NodePath("../..")
+libraries/ = SubResource("AnimationLibrary_w33xd")
+
+[node name="ScreenOverlay" type="CanvasLayer" parent="." unique_id=1348910584]
+
+[node name="Cinematic" type="Node2D" parent="." unique_id=57628830 node_paths=PackedStringArray("animation_player")]
+script = ExtResource("4_kpqku")
+dialogue = ExtResource("5_m7ukv")
+animation_player = NodePath("../OnTheGround/AnimationPlayer")
+next_scene = "uid://dhmhn56wqv5ej"
+metadata/_custom_type_script = "uid://x1mxt6bmei2o"
+
+[node name="BackgroundMusic" parent="." unique_id=1529927639 instance=ExtResource("10_43j7a")]
+stream = ExtResource("1_m7ukv")
