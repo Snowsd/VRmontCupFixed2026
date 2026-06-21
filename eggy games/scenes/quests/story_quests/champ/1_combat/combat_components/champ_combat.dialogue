@@ -1,0 +1,9 @@
+# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+
+~ start
+"Maybe i should bait champ with fish!"
+"That will shorten my journey by threefold!"
+~ well_done
+...
+=> END

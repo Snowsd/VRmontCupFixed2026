@@ -1,0 +1,16 @@
+# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+
+~ start
+do animation_player.play(&"walk_on")
+do animation_player.animation_finished
+Evan Embarks on his jounrey to find champ, for only champ can lift the curse set on him by the Evil wizard Jeff.
+He was tranformed...
+Something inside of him screams
+"Eggy"
+Maybe this could be his new name
+Just for now...
+
+
+do animation_player.play(&"walk_off")
+=> END
