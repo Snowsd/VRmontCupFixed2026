@@ -1,0 +1,18 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://q0v1wdnrygas"]
+
+[ext_resource type="Texture2D" uid="uid://bomsux0n3s5an" path="res://adam art/fish.png" id="1_ogufj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eraii"]
+atlas = ExtResource("1_ogufj")
+region = Rect2(64, 0, 64, 64)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eraii")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
