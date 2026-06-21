@@ -1,0 +1,87 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://h85time5ateg"]
+
+[ext_resource type="Texture2D" uid="uid://c36yujsqpwdjp" path="res://scenes/quests/story_quests/champ/2_sequence_puzzle/learner_edits/champ_default_npc.png" id="1_fpktl"]
+[ext_resource type="Texture2D" uid="uid://bi1kukxkkhh87" path="res://scenes/quests/story_quests/champ/3_stealth/stealth_components/NPC Idle.png" id="2_5fyqo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fpktl"]
+atlas = ExtResource("1_fpktl")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b11lw"]
+atlas = ExtResource("1_fpktl")
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xiorx"]
+atlas = ExtResource("1_fpktl")
+region = Rect2(384, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4kloh"]
+atlas = ExtResource("1_fpktl")
+region = Rect2(576, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1wub3"]
+atlas = ExtResource("1_fpktl")
+region = Rect2(768, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bv235"]
+atlas = ExtResource("1_fpktl")
+region = Rect2(960, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0bf00"]
+atlas = ExtResource("2_5fyqo")
+region = Rect2(0, 0, 81, 81)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lfba0"]
+atlas = ExtResource("2_5fyqo")
+region = Rect2(81, 0, 81, 81)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qenyr"]
+atlas = ExtResource("2_5fyqo")
+region = Rect2(0, 81, 81, 81)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6igk0"]
+atlas = ExtResource("2_5fyqo")
+region = Rect2(81, 81, 81, 81)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fpktl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b11lw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xiorx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4kloh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1wub3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bv235")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0bf00")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lfba0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qenyr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6igk0")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]

@@ -1,0 +1,18 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://iyjta1h3tu4a"]
+
+[ext_resource type="Texture2D" uid="uid://nbr16lqw2sa1" path="res://HENRY'S PNGS/Blue Fish-1.png.png" id="1_swyxf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cupop"]
+atlas = ExtResource("1_swyxf")
+region = Rect2(0, 0, 64, 64)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cupop")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
