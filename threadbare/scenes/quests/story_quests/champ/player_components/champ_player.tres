@@ -1,0 +1,139 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://ctjbkxw0r2f2i"]
+
+[ext_resource type="Texture2D" uid="uid://dgy44vslkp3lw" path="res://scenes/quests/story_quests/champ/0_intro/intro_components/mushy fight animation.png" id="1_rfo6d"]
+[ext_resource type="Texture2D" uid="uid://esacue0e3geb" path="res://scenes/quests/story_quests/champ/0_intro/intro_components/Mushy Main Charater de.png" id="3_rfo6d"]
+[ext_resource type="Texture2D" uid="uid://rq1ain8w7eyx" path="res://scenes/quests/story_quests/champ/0_intro/intro_components/Mushy Main Character Idle Animation.png" id="4_rfo6d"]
+[ext_resource type="Texture2D" uid="uid://bbaknx6lymc3x" path="res://scenes/quests/story_quests/champ/0_intro/intro_components/Mushy Main Character Walking Animation (1).png" id="5_n1xfu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n1xfu"]
+atlas = ExtResource("1_rfo6d")
+region = Rect2(0, 0, 162, 162)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lnalq"]
+atlas = ExtResource("1_rfo6d")
+region = Rect2(162, 0, 162, 162)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2g5qw"]
+atlas = ExtResource("1_rfo6d")
+region = Rect2(324, 0, 162, 162)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8hb2i"]
+atlas = ExtResource("1_rfo6d")
+region = Rect2(0, 0, 162, 162)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rfo6d"]
+atlas = ExtResource("1_rfo6d")
+region = Rect2(162, 0, 162, 162)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iwayb"]
+atlas = ExtResource("1_rfo6d")
+region = Rect2(324, 0, 162, 162)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7kwyf"]
+atlas = ExtResource("3_rfo6d")
+region = Rect2(0, 0, 162, 162)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_twykr"]
+atlas = ExtResource("3_rfo6d")
+region = Rect2(162, 0, 162, 162)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b2qp4"]
+atlas = ExtResource("3_rfo6d")
+region = Rect2(324, 0, 162, 162)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7cy87"]
+atlas = ExtResource("3_rfo6d")
+region = Rect2(486, 0, 162, 162)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2sihb"]
+atlas = ExtResource("4_rfo6d")
+region = Rect2(0, 0, 162, 162)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4scpb"]
+atlas = ExtResource("4_rfo6d")
+region = Rect2(162, 0, 162, 162)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_04n5c"]
+atlas = ExtResource("5_n1xfu")
+region = Rect2(0, 0, 162, 162)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yk8q0"]
+atlas = ExtResource("5_n1xfu")
+region = Rect2(162, 0, 162, 162)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ydlfd"]
+atlas = ExtResource("5_n1xfu")
+region = Rect2(324, 0, 162, 162)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n1xfu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lnalq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2g5qw")
+}],
+"loop": true,
+"name": &"attack_01",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8hb2i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rfo6d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iwayb")
+}],
+"loop": true,
+"name": &"attack_02",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7kwyf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_twykr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b2qp4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7cy87")
+}],
+"loop": true,
+"name": &"defeated",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2sihb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4scpb")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_04n5c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yk8q0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ydlfd")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 10.0
+}]

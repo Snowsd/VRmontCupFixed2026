@@ -1,0 +1,14 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://q0v1wdnrygas"]
+
+[ext_resource type="Texture2D" uid="uid://qvsx85uuob82" path="res://scenes/quests/story_quests/champ/1_combat/combat_components/green french frys bait.png" id="1_ogufj"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ogufj")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

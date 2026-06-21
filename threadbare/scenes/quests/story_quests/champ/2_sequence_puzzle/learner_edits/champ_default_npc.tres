@@ -1,0 +1,44 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://h85time5ateg"]
+
+[ext_resource type="Texture2D" uid="uid://m5om52u6ea3k" path="res://scenes/quests/story_quests/champ/2_sequence_puzzle/plant pup.png" id="1_big45"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5fyqo"]
+atlas = ExtResource("1_big45")
+region = Rect2(0, 0, 82, 82)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0bf00"]
+atlas = ExtResource("1_big45")
+region = Rect2(0, 82, 82, 82)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lfba0"]
+atlas = ExtResource("1_big45")
+region = Rect2(0, 0, 82, 82)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qenyr"]
+atlas = ExtResource("1_big45")
+region = Rect2(0, 82, 82, 82)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5fyqo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0bf00")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lfba0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qenyr")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
