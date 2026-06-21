@@ -1,0 +1,534 @@
+[gd_resource type="Resource" script_class="DialogueResource" format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_nb54n"]
+
+[resource]
+script = ExtResource("1_nb54n")
+using_states = PackedStringArray()
+titles = {
+"go_to_loom": "31",
+"start": "3",
+"threads_incorporated": "34"
+}
+character_names = PackedStringArray("LoreQuest Elder")
+first_title = "2"
+lines = {
+"1": {
+&"id": "1",
+&"next_id": "2",
+&"type": ""
+},
+"10": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 5,
+&"type": &"variable",
+&"value": "chosen_quest"
+}, {
+&"i": 17,
+&"type": &"dot"
+}, {
+&"i": 18,
+&"type": &"variable",
+&"value": "resource_path"
+}, {
+&"i": 32,
+&"type": &"comparison",
+&"value": "in"
+}, {
+&"i": 35,
+&"type": &"variable",
+&"value": "GameState"
+}, {
+&"i": 44,
+&"type": &"dot"
+}, {
+&"i": 45,
+&"type": &"variable",
+&"value": "completed_quests"
+}])
+},
+&"id": "10",
+&"next_id": "11",
+&"next_id_after": "29",
+&"next_sibling_id": "27",
+&"type": "condition"
+},
+"11": {
+&"id": "11",
+&"next_id": "12",
+&"type": ""
+},
+"12": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "chosen_quest"
+}, {
+&"i": 16,
+&"type": &"dot"
+}, {
+&"i": 17,
+&"type": &"variable",
+&"value": "resource_path"
+}, {
+&"i": 31,
+&"type": &"comparison",
+&"value": "=="
+}, {
+&"i": 34,
+&"type": &"string",
+&"value": "res://scenes/quests/lore_quests/quest_001/quest.tres"
+}])
+},
+&"id": "12",
+&"next_id": "13",
+&"next_id_after": "29",
+&"next_sibling_id": "16",
+&"type": "condition"
+},
+"13": {
+&"character": "LoreQuest Elder",
+&"id": "13",
+&"next_id": "29",
+&"siblings": Array[Dictionary]([{
+&"condition": {},
+&"id": "13",
+&"weight": 1.0
+}, {
+&"condition": {},
+&"id": "14",
+&"weight": 1.0
+}]),
+&"text": "Ah, the Song Sanctuary sings once more... a melody you already helped restore.",
+&"type": "dialogue"
+},
+"14": {
+&"character": "LoreQuest Elder",
+&"id": "14",
+&"next_id": "29",
+&"siblings": Array[Dictionary]([{
+&"condition": {},
+&"id": "13",
+&"weight": 1.0
+}, {
+&"condition": {},
+&"id": "14",
+&"weight": 1.0
+}]),
+&"text": "If you wish to revisit its echoes, traveler, the sanctuary always welcomes a gentle hand to tune its harmony again.",
+&"type": "dialogue"
+},
+"15": {
+&"id": "15",
+&"next_id": "16",
+&"type": ""
+},
+"16": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 6,
+&"type": &"variable",
+&"value": "chosen_quest"
+}, {
+&"i": 18,
+&"type": &"dot"
+}, {
+&"i": 19,
+&"type": &"variable",
+&"value": "resource_path"
+}, {
+&"i": 33,
+&"type": &"comparison",
+&"value": "=="
+}, {
+&"i": 36,
+&"type": &"string",
+&"value": "res://scenes/quests/lore_quests/quest_002/quest.tres"
+}])
+},
+&"id": "16",
+&"next_id": "17",
+&"next_id_after": "29",
+&"next_sibling_id": "20",
+&"type": "condition"
+},
+"17": {
+&"character": "LoreQuest Elder",
+&"id": "17",
+&"next_id": "29",
+&"siblings": Array[Dictionary]([{
+&"condition": {},
+&"id": "17",
+&"weight": 1.0
+}, {
+&"condition": {},
+&"id": "18",
+&"weight": 1.0
+}]),
+&"text": "The Void still stirs at the edges… even after the balance you once brought.",
+&"type": "dialogue"
+},
+"18": {
+&"character": "LoreQuest Elder",
+&"id": "18",
+&"next_id": "29",
+&"siblings": Array[Dictionary]([{
+&"condition": {},
+&"id": "17",
+&"weight": 1.0
+}, {
+&"condition": {},
+&"id": "18",
+&"weight": 1.0
+}]),
+&"text": "Should you feel ready to face it again, your presence can steady the archipelago’s stories once more.",
+&"type": "dialogue"
+},
+"19": {
+&"id": "19",
+&"next_id": "20",
+&"type": ""
+},
+"2": {
+&"id": "2",
+&"next_id": "3",
+&"type": "title"
+},
+"20": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 6,
+&"type": &"variable",
+&"value": "chosen_quest"
+}, {
+&"i": 18,
+&"type": &"dot"
+}, {
+&"i": 19,
+&"type": &"variable",
+&"value": "resource_path"
+}, {
+&"i": 33,
+&"type": &"comparison",
+&"value": "=="
+}, {
+&"i": 36,
+&"type": &"string",
+&"value": "res://scenes/quests/lore_quests/quest_003/quest.tres"
+}])
+},
+&"id": "20",
+&"next_id": "21",
+&"next_id_after": "29",
+&"next_sibling_id": "24",
+&"type": "condition"
+},
+"21": {
+&"character": "LoreQuest Elder",
+&"id": "21",
+&"next_id": "29",
+&"siblings": Array[Dictionary]([{
+&"condition": {},
+&"id": "21",
+&"weight": 1.0
+}, {
+&"condition": {},
+&"id": "22",
+&"weight": 1.0
+}]),
+&"text": "You’ve walked this path before—where Imagination and Spirit intertwine.",
+&"type": "dialogue"
+},
+"22": {
+&"character": "LoreQuest Elder",
+&"id": "22",
+&"next_id": "29",
+&"siblings": Array[Dictionary]([{
+&"condition": {},
+&"id": "21",
+&"weight": 1.0
+}, {
+&"condition": {},
+&"id": "22",
+&"weight": 1.0
+}]),
+&"text": "If you seek its lessons again, the Loom is always willing to be rewoven by steady hands.",
+&"type": "dialogue"
+},
+"23": {
+&"id": "23",
+&"next_id": "24",
+&"type": ""
+},
+"24": {
+&"condition": {},
+&"id": "24",
+&"next_id": "25",
+&"next_id_after": "29",
+&"type": "condition"
+},
+"25": {
+&"character": "LoreQuest Elder",
+&"id": "25",
+&"next_id": "29",
+&"siblings": Array[Dictionary]([{
+&"condition": {},
+&"id": "25",
+&"weight": 1.0
+}, {
+&"condition": {},
+&"id": "26",
+&"weight": 1.0
+}]),
+&"text": "This tale is one you already helped mend, traveler… yet its threads shift with each return.",
+&"type": "dialogue"
+},
+"26": {
+&"character": "LoreQuest Elder",
+&"id": "26",
+&"next_id": "29",
+&"siblings": Array[Dictionary]([{
+&"condition": {},
+&"id": "25",
+&"weight": 1.0
+}, {
+&"condition": {},
+&"id": "26",
+&"weight": 1.0
+}]),
+&"text": "If your heart pulls you back to it, the story will open itself to you once again.",
+&"type": "dialogue"
+},
+"27": {
+&"condition": {},
+&"id": "27",
+&"next_id": "28",
+&"next_id_after": "29",
+&"type": "condition"
+},
+"28": {
+&"character": "LoreQuest Elder",
+&"id": "28",
+&"next_id": "29",
+&"text": "We believe in you, StoryWeaver.",
+&"type": "dialogue"
+},
+"29": {
+&"id": "29",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"3": {
+&"character": "LoreQuest Elder",
+&"id": "3",
+&"next_id": "4",
+&"text": "[[Hi|Hello|Greetings]], StoryWeaver. We've been waiting for you. Our world is unraveling!",
+&"type": "dialogue"
+},
+"30": {
+&"id": "30",
+&"next_id": "31",
+&"type": "title"
+},
+"31": {
+&"character": "LoreQuest Elder",
+&"id": "31",
+&"next_id": "32",
+&"text": "Go on, StoryWeaver: take the threads to the Eternal Loom.",
+&"type": "dialogue"
+},
+"32": {
+&"id": "32",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"33": {
+&"id": "33",
+&"next_id": "34",
+&"type": "title"
+},
+"34": {
+&"character": "LoreQuest Elder",
+&"id": "34",
+&"next_id": "35",
+&"text": "Thank you, StoryWeaver! The fabric of the world slowly heals!",
+&"type": "dialogue"
+},
+"35": {
+&"character": "LoreQuest Elder",
+&"id": "35",
+&"next_id": "36",
+&"text": "Go forth: our world still needs your help.",
+&"type": "dialogue"
+},
+"36": {
+&"id": "36",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"37": {
+&"id": "37",
+&"next_id": "38",
+&"type": ""
+},
+"38": {
+&"id": "38",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"4": {
+&"character": "LoreQuest Elder",
+&"id": "4",
+&"next_id": "5",
+&"text": "We need you to recover the Sacred Elements: the threads of Memory, Imagination, and Spirit! Will you help us?",
+&"type": "dialogue"
+},
+"5": {
+&"id": "5",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "show_storybook",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "6",
+&"type": "mutation"
+},
+"6": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "chosen_quest"
+}, {
+&"i": 16,
+&"type": &"comparison",
+&"value": "=="
+}, {
+&"i": 19,
+&"type": &"variable",
+&"value": "null"
+}])
+},
+&"id": "6",
+&"next_id": "7",
+&"next_id_after": "29",
+&"next_sibling_id": "10",
+&"type": "condition"
+},
+"7": {
+&"character": "LoreQuest Elder",
+&"id": "7",
+&"next_id": "29",
+&"siblings": Array[Dictionary]([{
+&"condition": {},
+&"id": "7",
+&"weight": 1.0
+}, {
+&"condition": {},
+&"id": "8",
+&"weight": 1.0
+}, {
+&"condition": {},
+&"id": "9",
+&"weight": 1.0
+}]),
+&"text": "Please stay. Our world will perish without your help!",
+&"type": "dialogue"
+},
+"8": {
+&"character": "LoreQuest Elder",
+&"id": "8",
+&"next_id": "29",
+&"siblings": Array[Dictionary]([{
+&"condition": {},
+&"id": "7",
+&"weight": 1.0
+}, {
+&"condition": {},
+&"id": "8",
+&"weight": 1.0
+}, {
+&"condition": {},
+&"id": "9",
+&"weight": 1.0
+}]),
+&"text": "I hope to see you again. We really need you!",
+&"type": "dialogue"
+},
+"9": {
+&"character": "LoreQuest Elder",
+&"id": "9",
+&"next_id": "29",
+&"siblings": Array[Dictionary]([{
+&"condition": {},
+&"id": "7",
+&"weight": 1.0
+}, {
+&"condition": {},
+&"id": "8",
+&"weight": 1.0
+}, {
+&"condition": {},
+&"id": "9",
+&"weight": 1.0
+}]),
+&"text": "The people of Threadbare are counting on you. I hope you change your mind!",
+&"type": "dialogue"
+}
+}
+raw_text = "# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+~ start
+LoreQuest Elder: [[Hi|Hello|Greetings]], StoryWeaver. We've been waiting for you. Our world is unraveling!
+LoreQuest Elder: We need you to recover the Sacred Elements: the threads of Memory, Imagination, and Spirit! Will you help us?
+do show_storybook()
+if chosen_quest == null:
+	% LoreQuest Elder: Please stay. Our world will perish without your help!
+	% LoreQuest Elder: I hope to see you again. We really need you!
+	% LoreQuest Elder: The people of Threadbare are counting on you. I hope you change your mind!
+elif chosen_quest.resource_path in GameState.completed_quests:
+	# Custom dialogues for completed quests
+	if chosen_quest.resource_path == \"res://scenes/quests/lore_quests/quest_001/quest.tres\":
+		% LoreQuest Elder: Ah, the Song Sanctuary sings once more... a melody you already helped restore.
+		% LoreQuest Elder: If you wish to revisit its echoes, traveler, the sanctuary always welcomes a gentle hand to tune its harmony again.
+
+	elif chosen_quest.resource_path == \"res://scenes/quests/lore_quests/quest_002/quest.tres\":
+		% LoreQuest Elder: The Void still stirs at the edges… even after the balance you once brought.
+		% LoreQuest Elder: Should you feel ready to face it again, your presence can steady the archipelago’s stories once more.
+
+	elif chosen_quest.resource_path == \"res://scenes/quests/lore_quests/quest_003/quest.tres\":
+		% LoreQuest Elder: You’ve walked this path before—where Imagination and Spirit intertwine.
+		% LoreQuest Elder: If you seek its lessons again, the Loom is always willing to be rewoven by steady hands.
+
+	else:
+		% LoreQuest Elder: This tale is one you already helped mend, traveler… yet its threads shift with each return.
+		% LoreQuest Elder: If your heart pulls you back to it, the story will open itself to you once again.
+else:
+	LoreQuest Elder: We believe in you, StoryWeaver.
+=> END
+~ go_to_loom
+LoreQuest Elder: Go on, StoryWeaver: take the threads to the Eternal Loom.
+=> END
+~ threads_incorporated
+LoreQuest Elder: Thank you, StoryWeaver! The fabric of the world slowly heals!
+LoreQuest Elder: Go forth: our world still needs your help.
+=> END
+"
+metadata/dialogue_manager_version = "3.7.1"

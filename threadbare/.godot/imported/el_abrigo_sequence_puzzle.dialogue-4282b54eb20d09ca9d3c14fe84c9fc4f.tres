@@ -1,0 +1,108 @@
+[gd_resource type="Resource" script_class="DialogueResource" format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_no318"]
+
+[resource]
+script = ExtResource("1_no318")
+using_states = PackedStringArray()
+titles = {
+"start": "3",
+"well_done": "10"
+}
+character_names = PackedStringArray("Kaiser")
+first_title = "2"
+lines = {
+"1": {
+&"id": "1",
+&"next_id": "2",
+&"type": ""
+},
+"10": {
+&"character": "Kaiser",
+&"id": "10",
+&"next_id": "11",
+&"text": "Brrr... buen trabajo, será mejor continuar si no quiero congelarme aquí.",
+&"type": "dialogue"
+},
+"11": {
+&"id": "11",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"12": {
+&"id": "12",
+&"next_id": "13",
+&"type": ""
+},
+"13": {
+&"id": "13",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"2": {
+&"id": "2",
+&"next_id": "3",
+&"type": "title"
+},
+"3": {
+&"id": "3",
+&"next_id": "4",
+&"text": "El silencio del bosque era tan profundo que hasta el crujir del hielo parecía un susurro.",
+&"type": "dialogue"
+},
+"4": {
+&"id": "4",
+&"next_id": "5",
+&"text": "Cada parte resplandecía como un frágil pero consistente cristal bajo el sol.",
+&"type": "dialogue"
+},
+"5": {
+&"id": "5",
+&"next_id": "6",
+&"text": "Kaiser entendió que aquí la fuerza no era tan útil, sino la calma.",
+&"type": "dialogue"
+},
+"6": {
+&"id": "6",
+&"next_id": "7",
+&"text": "Solo aquel que escuche el ritmo del hielo podrá extraer la seda sin romperla.",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Kaiser",
+&"id": "7",
+&"next_id": "8",
+&"text": "Así que este es el Bosque Helado... hermoso, fríamente hermoso.",
+&"type": "dialogue"
+},
+"8": {
+&"id": "8",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"9": {
+&"id": "9",
+&"next_id": "10",
+&"type": "title"
+}
+}
+raw_text = "# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+~ start
+El silencio del bosque era tan profundo que hasta el crujir del hielo parecía un susurro.
+Cada parte resplandecía como un frágil pero consistente cristal bajo el sol.
+Kaiser entendió que aquí la fuerza no era tan útil, sino la calma.
+Solo aquel que escuche el ritmo del hielo podrá extraer la seda sin romperla.
+Kaiser: Así que este es el Bosque Helado... hermoso, fríamente hermoso.
+=> END
+~ well_done
+Kaiser: Brrr... buen trabajo, será mejor continuar si no quiero congelarme aquí.
+=> END
+"
+metadata/dialogue_manager_version = "3.7.1"

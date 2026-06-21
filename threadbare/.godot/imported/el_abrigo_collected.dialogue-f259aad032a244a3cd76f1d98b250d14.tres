@@ -1,0 +1,65 @@
+[gd_resource type="Resource" script_class="DialogueResource" format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_trwbd"]
+
+[resource]
+script = ExtResource("1_trwbd")
+using_states = PackedStringArray()
+titles = {
+"start": "3"
+}
+character_names = PackedStringArray("Kaiser")
+first_title = "2"
+lines = {
+"1": {
+&"id": "1",
+&"next_id": "2",
+&"type": ""
+},
+"2": {
+&"id": "2",
+&"next_id": "3",
+&"type": "title"
+},
+"3": {
+&"character": "Kaiser",
+&"id": "3",
+&"next_id": "4",
+&"text": "-¡Ajá, te atrapé!.",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Kaiser",
+&"id": "4",
+&"next_id": "5",
+&"text": "-Listo... la última pieza del abrigo. Es hora de volver con el mercader.",
+&"type": "dialogue"
+},
+"5": {
+&"id": "5",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"6": {
+&"id": "6",
+&"next_id": "7",
+&"type": ""
+},
+"7": {
+&"id": "7",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+}
+}
+raw_text = "# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+~ start
+Kaiser: -¡Ajá, te atrapé!.
+Kaiser: -Listo... la última pieza del abrigo. Es hora de volver con el mercader.
+=> END
+"
+metadata/dialogue_manager_version = "3.7.1"

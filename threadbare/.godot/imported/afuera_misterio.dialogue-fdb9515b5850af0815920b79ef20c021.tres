@@ -1,0 +1,258 @@
+[gd_resource type="Resource" script_class="DialogueResource" format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_61m7t"]
+
+[resource]
+script = ExtResource("1_61m7t")
+using_states = PackedStringArray()
+titles = {
+"start": "4"
+}
+character_names = PackedStringArray("CHARLIE", "BRYAN")
+first_title = "3"
+lines = {
+"10": {
+&"id": "10",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"i": 20,
+&"type": &"variable",
+&"value": "animation_finished"
+}]),
+&"is_blocking": true
+},
+&"next_id": "11",
+&"type": "mutation"
+},
+"11": {
+&"character": "BRYAN",
+&"id": "11",
+&"next_id": "12",
+&"text": "Qué pasó? Tu casa también esta vacía?",
+&"type": "dialogue"
+},
+"12": {
+&"character": "CHARLIE",
+&"id": "12",
+&"next_id": "13",
+&"text": "SI, MI GATITO DESAPARECIO! ¡EL NUNCA SALE DE CASA!",
+&"type": "dialogue"
+},
+"13": {
+&"character": "CHARLIE",
+&"id": "13",
+&"next_id": "14",
+&"text": "Y SI SE ASUSTÓ POR EL SISMO?!? NO PUEDE ESTAR SOLO EN LA CALLE!!",
+&"type": "dialogue"
+},
+"14": {
+&"character": "CHARLIE",
+&"id": "14",
+&"next_id": "15",
+&"text": "¡QUIEN LO ALIMENTARA! QUIEN LE DARÁ AGUA! QUIEN CAMBIARÁ SU...",
+&"type": "dialogue"
+},
+"15": {
+&"character": "BRYAN",
+&"id": "15",
+&"next_id": "16",
+&"text": "CALMATE! Ya sé que te importa ese gato, pero no solo es él, mi madre tampoco está en casa y parece que no hay ningún aldeano cerca.",
+&"type": "dialogue"
+},
+"16": {
+&"character": "CHARLIE",
+&"id": "16",
+&"next_id": "17",
+&"text": "POR QUÉ?? A dónde irían todos?",
+&"type": "dialogue"
+},
+"17": {
+&"character": "BRYAN",
+&"id": "17",
+&"next_id": "18",
+&"text": "Lo único que se me ocurre es que todos hayan ido a la escuela, nos dijeron que es el sitio de reunión para emergencias.",
+&"type": "dialogue"
+},
+"18": {
+&"character": "CHARLIE",
+&"id": "18",
+&"next_id": "19",
+&"text": "Pues vamos! Quizá alguien llevó a mi gato ahí!",
+&"type": "dialogue"
+},
+"19": {
+&"character": "BRYAN",
+&"id": "19",
+&"next_id": "20",
+&"text": "(Solo espero que mi madre también este ahÍ...)",
+&"type": "dialogue"
+},
+"2": {
+&"id": "2",
+&"next_id": "3",
+&"type": ""
+},
+"20": {
+&"id": "20",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"function": "play",
+&"i": 20,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 25,
+&"type": &"string",
+&"value": &"walk_off"
+}, {
+&"i": 36,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "21",
+&"type": "mutation"
+},
+"21": {
+&"id": "21",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"i": 20,
+&"type": &"variable",
+&"value": "animation_finished"
+}]),
+&"is_blocking": true
+},
+&"next_id": "22",
+&"type": "mutation"
+},
+"22": {
+&"id": "22",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"23": {
+&"id": "23",
+&"next_id": "24",
+&"type": ""
+},
+"24": {
+&"id": "24",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"3": {
+&"id": "3",
+&"next_id": "4",
+&"type": "title"
+},
+"4": {
+&"id": "4",
+&"next_id": "5",
+&"text": "Los 2 chicos no entendían que pasaba.",
+&"type": "dialogue"
+},
+"5": {
+&"id": "5",
+&"next_id": "6",
+&"text": "No sólo no encontraron a nadie en sus casas. No había nadie alrededor.",
+&"type": "dialogue"
+},
+"6": {
+&"id": "6",
+&"next_id": "7",
+&"text": "Todos los habitantes se habían esfumado",
+&"type": "dialogue"
+},
+"7": {
+&"id": "7",
+&"next_id": "8",
+&"text": "La aldea pasó a ser una aldea deshabitada en la que solo se podía escuchar el viento en las calles.",
+&"type": "dialogue"
+},
+"8": {
+&"character": "CHARLIE",
+&"id": "8",
+&"next_id": "9",
+&"text": "BRYAN!! AYUDAME!",
+&"type": "dialogue"
+},
+"9": {
+&"id": "9",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"function": "play",
+&"i": 20,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 25,
+&"type": &"string",
+&"value": &"walk_on"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "10",
+&"type": "mutation"
+}
+}
+raw_text = "# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+
+~ start
+Los 2 chicos no entendían que pasaba.
+No sólo no encontraron a nadie en sus casas. No había nadie alrededor.
+Todos los habitantes se habían esfumado
+La aldea pasó a ser una aldea deshabitada en la que solo se podía escuchar el viento en las calles.
+CHARLIE: BRYAN!! AYUDAME!
+do animation_player.play(&\"walk_on\")
+do animation_player.animation_finished
+BRYAN: Qué pasó? Tu casa también esta vacía?
+CHARLIE: SI, MI GATITO DESAPARECIO! ¡EL NUNCA SALE DE CASA!
+CHARLIE: Y SI SE ASUSTÓ POR EL SISMO?!? NO PUEDE ESTAR SOLO EN LA CALLE!!
+CHARLIE: ¡QUIEN LO ALIMENTARA! QUIEN LE DARÁ AGUA! QUIEN CAMBIARÁ SU...
+BRYAN: CALMATE! Ya sé que te importa ese gato, pero no solo es él, mi madre tampoco está en casa y parece que no hay ningún aldeano cerca.
+CHARLIE: POR QUÉ?? A dónde irían todos?
+BRYAN: Lo único que se me ocurre es que todos hayan ido a la escuela, nos dijeron que es el sitio de reunión para emergencias.
+CHARLIE: Pues vamos! Quizá alguien llevó a mi gato ahí!
+BRYAN: (Solo espero que mi madre también este ahÍ...)
+do animation_player.play(&\"walk_off\")
+do animation_player.animation_finished
+=> END
+"
+metadata/dialogue_manager_version = "3.7.1"

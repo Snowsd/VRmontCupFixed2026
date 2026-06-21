@@ -1,0 +1,77 @@
+[gd_resource type="Resource" script_class="DialogueResource" format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_hx874"]
+
+[resource]
+script = ExtResource("1_hx874")
+using_states = PackedStringArray()
+titles = {
+"start": "3"
+}
+character_names = PackedStringArray()
+first_title = "2"
+lines = {
+"1": {
+&"id": "1",
+&"next_id": "2",
+&"type": ""
+},
+"2": {
+&"id": "2",
+&"next_id": "3",
+&"type": "title"
+},
+"3": {
+&"id": "3",
+&"next_id": "4",
+&"text": "Pudiste superar a los guardias del rey marino ¡Bien hecho!",
+&"type": "dialogue"
+},
+"4": {
+&"id": "4",
+&"next_id": "5",
+&"text": "Lograste desbloquear una nueva habilidad *SONATA MUSICAL*",
+&"type": "dialogue"
+},
+"5": {
+&"id": "5",
+&"next_id": "6",
+&"text": "Pronto sabras para que sirve, mucha suerte",
+&"type": "dialogue"
+},
+"6": {
+&"id": "6",
+&"next_id": "7",
+&"text": "Anda con cuidado que el rey marino puede despertar",
+&"type": "dialogue"
+},
+"7": {
+&"id": "7",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"8": {
+&"id": "8",
+&"next_id": "9",
+&"type": ""
+},
+"9": {
+&"id": "9",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+}
+}
+raw_text = "# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+~ start
+Pudiste superar a los guardias del rey marino ¡Bien hecho!
+Lograste desbloquear una nueva habilidad *SONATA MUSICAL*
+Pronto sabras para que sirve, mucha suerte
+Anda con cuidado que el rey marino puede despertar
+=> END
+"
+metadata/dialogue_manager_version = "3.7.1"

@@ -1,0 +1,70 @@
+[gd_resource type="Resource" script_class="DialogueResource" format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_3lhd3"]
+
+[resource]
+script = ExtResource("1_3lhd3")
+using_states = PackedStringArray()
+titles = {
+"start": "3"
+}
+character_names = PackedStringArray()
+first_title = "2"
+lines = {
+"1": {
+&"id": "1",
+&"next_id": "2",
+&"type": ""
+},
+"2": {
+&"id": "2",
+&"next_id": "3",
+&"type": "title"
+},
+"3": {
+&"id": "3",
+&"next_id": "4",
+&"text": "That night, back in her own bed, Stella looks up at Orion’s Belt. But now, she sees more than a hunter.",
+&"type": "dialogue"
+},
+"4": {
+&"id": "4",
+&"next_id": "5",
+&"text": "She sees a hearth, a canoe, a tortoise’s path.",
+&"type": "dialogue"
+},
+"5": {
+&"id": "5",
+&"next_id": "6",
+&"text": "The sky hasn’t changed. But she has.",
+&"type": "dialogue"
+},
+"6": {
+&"id": "6",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"7": {
+&"id": "7",
+&"next_id": "8",
+&"type": ""
+},
+"8": {
+&"id": "8",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+}
+}
+raw_text = "# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+~ start
+That night, back in her own bed, Stella looks up at Orion’s Belt. But now, she sees more than a hunter.
+She sees a hearth, a canoe, a tortoise’s path.
+The sky hasn’t changed. But she has.
+=> END
+"
+metadata/dialogue_manager_version = "3.7.1"

@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://ujqhbghqjhdq" path="res://scenes/quests/story_quests/champ/tiles/assets/poster_kraken.png" id="3_kpqku"]
 [ext_resource type="SpriteFrames" uid="uid://ctjbkxw0r2f2i" path="res://scenes/quests/story_quests/champ/player_components/champ_player.tres" id="3_ufx21"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="4_kpqku"]
-[ext_resource type="Texture2D" uid="uid://2ny766ts4k84" path="res://pixil-frame-0.png" id="5_43j7a"]
+[ext_resource type="Texture2D" uid="uid://2ny766ts4k84" path="res://assets/Eggy Games/Eggy Games Assets/Animations/pixil-frame-0.png" id="5_43j7a"]
 [ext_resource type="Resource" uid="uid://dqj53ffq0tgqd" path="res://scenes/quests/story_quests/champ/0_intro/intro_components/champ_intro.dialogue" id="5_m7ukv"]
 [ext_resource type="Texture2D" uid="uid://ifk6hdmg4he" path="res://assets/Eggy Games/Eggy Games Assets/Animations/Champlain monster-1.png.png" id="5_w33xd"]
 [ext_resource type="Texture2D" uid="uid://dml1odsg20jgn" path="res://scenes/quests/story_quests/champ/tiles/assets/tape.png" id="6_kpqku"]

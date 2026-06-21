@@ -1,0 +1,205 @@
+[gd_resource type="Resource" script_class="DialogueResource" format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_dg2f8"]
+
+[resource]
+script = ExtResource("1_dg2f8")
+using_states = PackedStringArray()
+titles = {
+"start": "4"
+}
+character_names = PackedStringArray("MAMÁ", "BRYAN")
+first_title = "3"
+lines = {
+"11": {
+&"id": "11",
+&"next_id": "12",
+&"type": ""
+},
+"12": {
+&"character": "MAMÁ",
+&"id": "12",
+&"next_id": "13",
+&"text": "Bryan?",
+&"type": "dialogue"
+},
+"13": {
+&"id": "13",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"function": "play",
+&"i": 20,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 25,
+&"type": &"string",
+&"value": &"off_texture"
+}, {
+&"i": 39,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "14",
+&"type": "mutation"
+},
+"14": {
+&"id": "14",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"i": 20,
+&"type": &"variable",
+&"value": "animation_finished"
+}]),
+&"is_blocking": true
+},
+&"next_id": "17",
+&"type": "mutation"
+},
+"16": {
+&"id": "16",
+&"next_id": "17",
+&"type": ""
+},
+"17": {
+&"character": "MAMÁ",
+&"id": "17",
+&"next_id": "18",
+&"text": "BRYAN! LEVANTATE NIÑO!",
+&"type": "dialogue"
+},
+"18": {
+&"character": "BRYAN",
+&"id": "18",
+&"next_id": "19",
+&"text": "Que paso mamá?!?!",
+&"type": "dialogue"
+},
+"19": {
+&"character": "MAMÁ",
+&"id": "19",
+&"next_id": "20",
+&"text": "Charlie lleva esperandote mucho rato afuera para que jueguen!!",
+&"type": "dialogue"
+},
+"2": {
+&"id": "2",
+&"next_id": "3",
+&"type": ""
+},
+"20": {
+&"character": "BRYAN",
+&"id": "20",
+&"next_id": "21",
+&"text": "(Oh, es cierto. Hoy es sabado).",
+&"type": "dialogue"
+},
+"21": {
+&"character": "MAMÁ",
+&"id": "21",
+&"next_id": "24",
+&"text": "Alistate y ve con él! El pobre sigue afuera.",
+&"type": "dialogue"
+},
+"23": {
+&"id": "23",
+&"next_id": "24",
+&"type": ""
+},
+"24": {
+&"id": "24",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"25": {
+&"id": "25",
+&"next_id": "26",
+&"type": ""
+},
+"26": {
+&"id": "26",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"3": {
+&"id": "3",
+&"next_id": "4",
+&"type": "title"
+},
+"4": {
+&"id": "4",
+&"next_id": "5",
+&"text": "Hace tiempo, una tranquila aldea se veía a lo lejos.",
+&"type": "dialogue"
+},
+"5": {
+&"id": "5",
+&"next_id": "6",
+&"text": "Todo iba bien, la gente riendo. Los niños jugando.",
+&"type": "dialogue"
+},
+"6": {
+&"id": "6",
+&"next_id": "8",
+&"text": "Pero algo pasó el día de hoy...",
+&"type": "dialogue"
+},
+"7": {
+&"id": "7",
+&"next_id": "8",
+&"type": ""
+},
+"8": {
+&"character": "MAMÁ",
+&"id": "8",
+&"next_id": "12",
+&"text": "Bryan...",
+&"type": "dialogue"
+}
+}
+raw_text = "# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+
+~ start
+Hace tiempo, una tranquila aldea se veía a lo lejos.
+Todo iba bien, la gente riendo. Los niños jugando.
+Pero algo pasó el día de hoy...
+#aquí se apaga el texture
+MAMÁ: Bryan...
+
+#do animation_player.play(&\"walk_on\")
+#do animation_player.animation_finished
+MAMÁ: Bryan?
+do animation_player.play(&\"off_texture\")
+do animation_player.animation_finished
+#do animation_player.play(&\"run_to_bed\")
+#do animation_player.animation_finished
+MAMÁ: BRYAN! LEVANTATE NIÑO!
+BRYAN: Que paso mamá?!?!
+MAMÁ: Charlie lleva esperandote mucho rato afuera para que jueguen!!
+BRYAN: (Oh, es cierto. Hoy es sabado).
+MAMÁ: Alistate y ve con él! El pobre sigue afuera.
+#do animation_player.play(&\"walk_off\")
+#do animation_player.animation_finished
+=> END
+"
+metadata/dialogue_manager_version = "3.7.1"

@@ -1,0 +1,213 @@
+[gd_resource type="Resource" script_class="DialogueResource" format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_c1yg7"]
+
+[resource]
+script = ExtResource("1_c1yg7")
+using_states = PackedStringArray()
+titles = {
+"start": "3"
+}
+character_names = PackedStringArray("Kaiser", "Comerciante", "Kaiser (sonríe)")
+first_title = "2"
+lines = {
+"1": {
+&"id": "1",
+&"next_id": "2",
+&"type": ""
+},
+"10": {
+&"character": "Kaiser",
+&"id": "10",
+&"next_id": "11",
+&"text": "—¿Podría ayudarte en algo?",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Comerciante",
+&"id": "11",
+&"next_id": "13",
+&"text": "—Necesito más que manos hábiles, viajero. Tres hilos guardan el calor que vence al invierno:
+La seda helada del bosque, el hilo resplandeciente de la cueva dorada y la lana cálida de las colinas otoñales.",
+&"type": "dialogue"
+},
+"13": {
+&"character": "Kaiser (sonríe)",
+&"id": "13",
+&"next_id": "14",
+&"text": "—Pues si lo que buscas tiene hilo y destino... Tres hilos, Tres pruebas. Suena como el tipo de problema que no puedo ignorar.",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Comerciante",
+&"id": "14",
+&"next_id": "15",
+&"text": "—O como el tipo de destino que no puedes evitar jajaja.",
+&"type": "dialogue"
+},
+"15": {
+&"id": "15",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"function": "play",
+&"i": 20,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 25,
+&"type": &"string",
+&"value": &"walk_off"
+}, {
+&"i": 36,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "16",
+&"type": "mutation"
+},
+"16": {
+&"character": "Kaiser",
+&"id": "16",
+&"next_id": "18",
+&"text": "—Pues no te preocupes, volveré con esos materiales, ¡ya lo verás!",
+&"type": "dialogue"
+},
+"17": {
+&"id": "17",
+&"next_id": "18",
+&"type": ""
+},
+"18": {
+&"id": "18",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"19": {
+&"id": "19",
+&"next_id": "20",
+&"type": ""
+},
+"2": {
+&"id": "2",
+&"next_id": "3",
+&"type": "title"
+},
+"20": {
+&"id": "20",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"3": {
+&"id": "3",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"function": "play",
+&"i": 20,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 25,
+&"type": &"string",
+&"value": &"walk_on"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "4",
+&"type": "mutation"
+},
+"4": {
+&"id": "4",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"i": 20,
+&"type": &"variable",
+&"value": "animation_finished"
+}]),
+&"is_blocking": true
+},
+&"next_id": "5",
+&"type": "mutation"
+},
+"5": {
+&"id": "5",
+&"next_id": "6",
+&"text": "El viento del otoño silbaba con fuerza entre los árboles. Las hojas caían en espirales, cubriendo el suelo con un manto rojizo.",
+&"type": "dialogue"
+},
+"6": {
+&"id": "6",
+&"next_id": "7",
+&"text": "Entre ese paisaje vibrante avanzaba Kaiser, un jóven de mirada decidida y a paso firme, llevando un abrigo verde que resaltaba en el entorno.",
+&"type": "dialogue"
+},
+"7": {
+&"id": "7",
+&"next_id": "8",
+&"text": "Tras días caminando en un viaje sin rumbo fijo, se encontró en medio del bosque una cabaña y, fuera de esta, a una persona con un aire extrañamente carismático.",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Kaiser",
+&"id": "8",
+&"next_id": "9",
+&"text": "—Emm... ¿Hola?... disculpa, es que no es muy común encontrar personas en pleno bosque.",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Comerciante",
+&"id": "9",
+&"next_id": "10",
+&"text": "—Y pocos son los que caminan sin abrigo por estas zonas viajero, especialmente con el duro invierno que se aproxima jajaja.",
+&"type": "dialogue"
+}
+}
+raw_text = "# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+~ start
+do animation_player.play(&\"walk_on\")
+do animation_player.animation_finished
+El viento del otoño silbaba con fuerza entre los árboles. Las hojas caían en espirales, cubriendo el suelo con un manto rojizo.
+Entre ese paisaje vibrante avanzaba Kaiser, un jóven de mirada decidida y a paso firme, llevando un abrigo verde que resaltaba en el entorno.
+Tras días caminando en un viaje sin rumbo fijo, se encontró en medio del bosque una cabaña y, fuera de esta, a una persona con un aire extrañamente carismático.
+Kaiser: —Emm... ¿Hola?... disculpa, es que no es muy común encontrar personas en pleno bosque.
+Comerciante: —Y pocos son los que caminan sin abrigo por estas zonas viajero, especialmente con el duro invierno que se aproxima jajaja.
+Kaiser: —¿Podría ayudarte en algo?
+Comerciante: —Necesito más que manos hábiles, viajero. Tres hilos guardan el calor que vence al invierno:
+	La seda helada del bosque, el hilo resplandeciente de la cueva dorada y la lana cálida de las colinas otoñales. 
+Kaiser (sonríe): —Pues si lo que buscas tiene hilo y destino... Tres hilos, Tres pruebas. Suena como el tipo de problema que no puedo ignorar.
+Comerciante: —O como el tipo de destino que no puedes evitar jajaja.
+do animation_player.play(&\"walk_off\")
+Kaiser:  —Pues no te preocupes, volveré con esos materiales, ¡ya lo verás! 
+
+=> END
+"
+metadata/dialogue_manager_version = "3.7.1"

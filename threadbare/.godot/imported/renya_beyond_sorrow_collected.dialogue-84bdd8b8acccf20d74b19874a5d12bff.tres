@@ -1,0 +1,88 @@
+[gd_resource type="Resource" script_class="DialogueResource" format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_5qdvj"]
+
+[resource]
+script = ExtResource("1_5qdvj")
+using_states = PackedStringArray()
+titles = {
+"start": "3"
+}
+character_names = PackedStringArray("Renya", "Naiya")
+first_title = "2"
+lines = {
+"1": {
+&"id": "1",
+&"next_id": "2",
+&"type": ""
+},
+"10": {
+&"id": "10",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"2": {
+&"id": "2",
+&"next_id": "3",
+&"type": "title"
+},
+"3": {
+&"character": "Renya",
+&"id": "3",
+&"next_id": "4",
+&"text": "No puedo creerlo, todo este tiempo no fue necesario defensa…",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Renya",
+&"id": "4",
+&"next_id": "5",
+&"text": "Solo caminar y dejar que su luz me guiara.",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Naiya",
+&"id": "5",
+&"next_id": "6",
+&"text": "En Solara, Renya entendió que aceptar no es rendirse…",
+&"type": "dialogue"
+},
+"6": {
+&"id": "6",
+&"next_id": "7",
+&"text": "Es permitir que la luz encuentre espacio en la oscuridad.",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Naiya",
+&"id": "7",
+&"next_id": "8",
+&"text": "Y así, Renya sin conflictos logró conseguir el último hilo para que este vuelva a brillar.",
+&"type": "dialogue"
+},
+"8": {
+&"id": "8",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"9": {
+&"id": "9",
+&"next_id": "10",
+&"type": ""
+}
+}
+raw_text = "# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+~ start
+Renya: No puedo creerlo, todo este tiempo no fue necesario defensa…
+Renya: Solo caminar y dejar que su luz me guiara.
+Naiya: En Solara, Renya entendió que aceptar no es rendirse…
+Es permitir que la luz encuentre espacio en la oscuridad.
+Naiya: Y así, Renya sin conflictos logró conseguir el último hilo para que este vuelva a brillar.
+=> END
+"
+metadata/dialogue_manager_version = "3.7.1"

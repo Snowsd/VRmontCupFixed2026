@@ -1,0 +1,479 @@
+[gd_resource type="Resource" script_class="DialogueResource" format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_4baxh"]
+
+[resource]
+script = ExtResource("1_4baxh")
+using_states = PackedStringArray()
+titles = {
+"start": "4"
+}
+character_names = PackedStringArray("BRYAN", "CHARLIE", "???")
+first_title = "3"
+lines = {
+"10": {
+&"id": "10",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"function": "play",
+&"i": 20,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 25,
+&"type": &"string",
+&"value": &"walk_on_entity"
+}, {
+&"i": 42,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "11",
+&"type": "mutation"
+},
+"11": {
+&"id": "11",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"i": 20,
+&"type": &"variable",
+&"value": "animation_finished"
+}]),
+&"is_blocking": true
+},
+&"next_id": "12",
+&"type": "mutation"
+},
+"12": {
+&"character": "???",
+&"id": "12",
+&"next_id": "13",
+&"text": "¿Por qué ustedes siguen aquí? La aldea debería estar vacía?",
+&"type": "dialogue"
+},
+"13": {
+&"id": "13",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "shaker"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"function": "shake",
+&"i": 10,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 16,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "14",
+&"type": "mutation"
+},
+"14": {
+&"character": "CHARLIE",
+&"id": "14",
+&"next_id": "15",
+&"text": "AHHHHH!! QUIEN ERES TU?!?",
+&"type": "dialogue"
+},
+"15": {
+&"character": "???",
+&"id": "15",
+&"next_id": "16",
+&"text": "Por qué lo preguntas? Tampoco es que eso cambie algo",
+&"type": "dialogue"
+},
+"16": {
+&"character": "BRYAN",
+&"id": "16",
+&"next_id": "17",
+&"text": "Qué eres?? Dónde está mi mama??",
+&"type": "dialogue"
+},
+"17": {
+&"character": "???",
+&"id": "17",
+&"next_id": "18",
+&"text": "Como dije, el saber quien soy no cambia nada. Los aldeanos desaparecieron y esta aldea estará condenada a quedarse así...",
+&"type": "dialogue"
+},
+"18": {
+&"character": "???",
+&"id": "18",
+&"next_id": "19",
+&"text": "No sé que es una \"mamá\" pero había una persona bastante ruidosa durante la reagrupación.",
+&"type": "dialogue"
+},
+"19": {
+&"character": "BRYAN",
+&"id": "19",
+&"next_id": "20",
+&"text": "Escúchame… si a mi madre le pasa algo…",
+&"type": "dialogue"
+},
+"2": {
+&"id": "2",
+&"next_id": "3",
+&"type": ""
+},
+"20": {
+&"id": "20",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"function": "play",
+&"i": 20,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 25,
+&"type": &"string",
+&"value": &"bryan_closer"
+}, {
+&"i": 40,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "21",
+&"type": "mutation"
+},
+"21": {
+&"id": "21",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"i": 20,
+&"type": &"variable",
+&"value": "animation_finished"
+}]),
+&"is_blocking": true
+},
+&"next_id": "22",
+&"type": "mutation"
+},
+"22": {
+&"character": "???",
+&"id": "22",
+&"next_id": "23",
+&"text": "Solo saben amenazar y tratar mal a la gente sin pensar en las consecuencias.",
+&"type": "dialogue"
+},
+"23": {
+&"character": "???",
+&"id": "23",
+&"next_id": "24",
+&"text": "No tengo tiempo para esto.",
+&"type": "dialogue"
+},
+"24": {
+&"id": "24",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"function": "play",
+&"i": 20,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 25,
+&"type": &"string",
+&"value": &"walk_off_entity"
+}, {
+&"i": 43,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "25",
+&"type": "mutation"
+},
+"25": {
+&"id": "25",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"i": 20,
+&"type": &"variable",
+&"value": "animation_finished"
+}]),
+&"is_blocking": true
+},
+&"next_id": "26",
+&"type": "mutation"
+},
+"26": {
+&"character": "BRYAN",
+&"id": "26",
+&"next_id": "27",
+&"text": "OYE!! Charlie, sígueme!",
+&"type": "dialogue"
+},
+"27": {
+&"character": "CHARLIE",
+&"id": "27",
+&"next_id": "28",
+&"text": "ESPERAME!",
+&"type": "dialogue"
+},
+"28": {
+&"id": "28",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"function": "play",
+&"i": 20,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 25,
+&"type": &"string",
+&"value": &"walk_off"
+}, {
+&"i": 36,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "29",
+&"type": "mutation"
+},
+"29": {
+&"id": "29",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"i": 20,
+&"type": &"variable",
+&"value": "animation_finished"
+}]),
+&"is_blocking": true
+},
+&"next_id": "30",
+&"type": "mutation"
+},
+"3": {
+&"id": "3",
+&"next_id": "4",
+&"type": "title"
+},
+"30": {
+&"id": "30",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"31": {
+&"id": "31",
+&"next_id": "32",
+&"type": ""
+},
+"32": {
+&"id": "32",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"4": {
+&"id": "4",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"function": "play",
+&"i": 20,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 25,
+&"type": &"string",
+&"value": &"walk_on"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "5",
+&"type": "mutation"
+},
+"5": {
+&"id": "5",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"i": 20,
+&"type": &"variable",
+&"value": "animation_finished"
+}]),
+&"is_blocking": true
+},
+&"next_id": "6",
+&"type": "mutation"
+},
+"6": {
+&"character": "BRYAN",
+&"id": "6",
+&"next_id": "7",
+&"text": "Ya llegamos. Ven, entremos.",
+&"type": "dialogue"
+},
+"7": {
+&"character": "CHARLIE",
+&"id": "7",
+&"next_id": "8",
+&"text": "ok",
+&"type": "dialogue"
+},
+"8": {
+&"id": "8",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"function": "play",
+&"i": 20,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 25,
+&"type": &"string",
+&"value": &"walk_on_school"
+}, {
+&"i": 42,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "9",
+&"type": "mutation"
+},
+"9": {
+&"id": "9",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"i": 20,
+&"type": &"variable",
+&"value": "animation_finished"
+}]),
+&"is_blocking": true
+},
+&"next_id": "10",
+&"type": "mutation"
+}
+}
+raw_text = "# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+
+~ start
+do animation_player.play(&\"walk_on\")
+do animation_player.animation_finished
+BRYAN: Ya llegamos. Ven, entremos.
+CHARLIE: ok
+do animation_player.play(&\"walk_on_school\")
+do animation_player.animation_finished
+do animation_player.play(&\"walk_on_entity\")
+do animation_player.animation_finished
+???: ¿Por qué ustedes siguen aquí? La aldea debería estar vacía?
+do shaker.shake()
+CHARLIE: AHHHHH!! QUIEN ERES TU?!?
+???: Por qué lo preguntas? Tampoco es que eso cambie algo
+BRYAN: Qué eres?? Dónde está mi mama??
+???: Como dije, el saber quien soy no cambia nada. Los aldeanos desaparecieron y esta aldea estará condenada a quedarse así... 
+???: No sé que es una \"mamá\" pero había una persona bastante ruidosa durante la reagrupación.
+BRYAN: Escúchame… si a mi madre le pasa algo…
+do animation_player.play(&\"bryan_closer\")
+do animation_player.animation_finished
+???: Solo saben amenazar y tratar mal a la gente sin pensar en las consecuencias.
+???: No tengo tiempo para esto.
+do animation_player.play(&\"walk_off_entity\")
+do animation_player.animation_finished
+BRYAN: OYE!! Charlie, sígueme!
+CHARLIE: ESPERAME!
+do animation_player.play(&\"walk_off\")
+do animation_player.animation_finished
+=> END
+"
+metadata/dialogue_manager_version = "3.7.1"

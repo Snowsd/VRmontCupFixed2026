@@ -1,0 +1,650 @@
+[gd_resource type="Resource" script_class="DialogueResource" format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_ffnhh"]
+
+[resource]
+script = ExtResource("1_ffnhh")
+using_states = PackedStringArray()
+titles = {
+"start": "3"
+}
+character_names = PackedStringArray("Charlie", "Bryan")
+first_title = "2"
+lines = {
+"1": {
+&"id": "1",
+&"next_id": "2",
+&"type": ""
+},
+"10": {
+&"id": "10",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"function": "play",
+&"i": 20,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 25,
+&"type": &"string",
+&"value": &"charlieasustado"
+}, {
+&"i": 43,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "11",
+&"type": "mutation"
+},
+"11": {
+&"id": "11",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"i": 20,
+&"type": &"variable",
+&"value": "animation_finished"
+}]),
+&"is_blocking": true
+},
+&"next_id": "12",
+&"type": "mutation"
+},
+"12": {
+&"character": "Charlie",
+&"id": "12",
+&"next_id": "13",
+&"text": "Yo no lo sabia... Ya te dije que no fue mi intencion.",
+&"type": "dialogue"
+},
+"13": {
+&"character": "Bryan",
+&"id": "13",
+&"next_id": "14",
+&"text": "Por culpa de eso mi madre sigue en algun sitio y NO SE DONDE ESTA.",
+&"type": "dialogue"
+},
+"14": {
+&"id": "14",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"function": "play",
+&"i": 20,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 25,
+&"type": &"string",
+&"value": &"bryanpateaycharliecamina"
+}, {
+&"i": 52,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "15",
+&"type": "mutation"
+},
+"15": {
+&"id": "15",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"i": 20,
+&"type": &"variable",
+&"value": "animation_finished"
+}]),
+&"is_blocking": true
+},
+&"next_id": "16",
+&"type": "mutation"
+},
+"16": {
+&"character": "Charlie",
+&"id": "16",
+&"next_id": "17",
+&"text": "Bryan...",
+&"type": "dialogue"
+},
+"17": {
+&"id": "17",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"function": "play",
+&"i": 20,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 25,
+&"type": &"string",
+&"value": &"bryanmira"
+}, {
+&"i": 37,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "18",
+&"type": "mutation"
+},
+"18": {
+&"id": "18",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"i": 20,
+&"type": &"variable",
+&"value": "animation_finished"
+}]),
+&"is_blocking": true
+},
+&"next_id": "19",
+&"type": "mutation"
+},
+"19": {
+&"character": "Bryan",
+&"id": "19",
+&"next_id": "20",
+&"text": "Espera",
+&"type": "dialogue"
+},
+"2": {
+&"id": "2",
+&"next_id": "3",
+&"type": "title"
+},
+"20": {
+&"id": "20",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"function": "play",
+&"i": 20,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 25,
+&"type": &"string",
+&"value": &"bryantela"
+}, {
+&"i": 37,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "21",
+&"type": "mutation"
+},
+"21": {
+&"id": "21",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"i": 20,
+&"type": &"variable",
+&"value": "animation_finished"
+}]),
+&"is_blocking": true
+},
+&"next_id": "22",
+&"type": "mutation"
+},
+"22": {
+&"character": "Bryan",
+&"id": "22",
+&"next_id": "23",
+&"text": "Mira eso.",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Charlie",
+&"id": "23",
+&"next_id": "24",
+&"text": "Que es?",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Bryan",
+&"id": "24",
+&"next_id": "25",
+&"text": "Parece tela de esa sabana flotante.",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Bryan",
+&"id": "25",
+&"next_id": "26",
+&"text": "Mira, es una tunica hecha en el taller de la aldea.",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Charlie",
+&"id": "26",
+&"next_id": "27",
+&"text": "Uh? Pero no recuerdo haber visto una tunica flotante antes de este dia.",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Bryan",
+&"id": "27",
+&"next_id": "28",
+&"text": "Porque no habia ninguna antes.",
+&"type": "dialogue"
+},
+"28": {
+&"character": "Bryan",
+&"id": "28",
+&"next_id": "29",
+&"text": "Pero es la unica pista que tenemos.",
+&"type": "dialogue"
+},
+"29": {
+&"id": "29",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"function": "play",
+&"i": 20,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 25,
+&"type": &"string",
+&"value": &"vamonos"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "30",
+&"type": "mutation"
+},
+"3": {
+&"id": "3",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"function": "play",
+&"i": 20,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 25,
+&"type": &"string",
+&"value": &"entrada"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "4",
+&"type": "mutation"
+},
+"30": {
+&"id": "30",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"i": 20,
+&"type": &"variable",
+&"value": "animation_finished"
+}]),
+&"is_blocking": true
+},
+&"next_id": "31",
+&"type": "mutation"
+},
+"31": {
+&"character": "Bryan",
+&"id": "31",
+&"next_id": "32",
+&"text": "Vamonos.",
+&"type": "dialogue"
+},
+"32": {
+&"id": "32",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"function": "play",
+&"i": 20,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 25,
+&"type": &"string",
+&"value": &"salebryan"
+}, {
+&"i": 37,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "33",
+&"type": "mutation"
+},
+"33": {
+&"id": "33",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"i": 20,
+&"type": &"variable",
+&"value": "animation_finished"
+}]),
+&"is_blocking": true
+},
+&"next_id": "34",
+&"type": "mutation"
+},
+"34": {
+&"character": "Charlie",
+&"id": "34",
+&"next_id": "35",
+&"text": "...",
+&"type": "dialogue"
+},
+"35": {
+&"id": "35",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"function": "play",
+&"i": 20,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 25,
+&"type": &"string",
+&"value": &"salecharlie"
+}, {
+&"i": 39,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "36",
+&"type": "mutation"
+},
+"36": {
+&"id": "36",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"i": 20,
+&"type": &"variable",
+&"value": "animation_finished"
+}]),
+&"is_blocking": true
+},
+&"next_id": "38",
+&"type": "mutation"
+},
+"37": {
+&"id": "37",
+&"next_id": "38",
+&"type": ""
+},
+"38": {
+&"id": "38",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"39": {
+&"id": "39",
+&"next_id": "40",
+&"type": ""
+},
+"4": {
+&"id": "4",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"i": 20,
+&"type": &"variable",
+&"value": "animation_finished"
+}]),
+&"is_blocking": true
+},
+&"next_id": "5",
+&"type": "mutation"
+},
+"40": {
+&"id": "40",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"5": {
+&"character": "Charlie",
+&"id": "5",
+&"next_id": "6",
+&"text": "Bryan, ya revisamos todos los salones. No creo que el fantasma este aqui...",
+&"type": "dialogue"
+},
+"6": {
+&"id": "6",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"function": "play",
+&"i": 20,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 25,
+&"type": &"string",
+&"value": &"bryanacercandose"
+}, {
+&"i": 44,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "7",
+&"type": "mutation"
+},
+"7": {
+&"id": "7",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"i": 20,
+&"type": &"variable",
+&"value": "animation_finished"
+}]),
+&"is_blocking": true
+},
+&"next_id": "8",
+&"type": "mutation"
+},
+"8": {
+&"character": "Bryan",
+&"id": "8",
+&"next_id": "9",
+&"text": "Estaria aqui si no me hubieras hecho caer a ese SITIO!",
+&"type": "dialogue"
+},
+"9": {
+&"id": "9",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "shaker"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"function": "shake",
+&"i": 10,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 16,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "10",
+&"type": "mutation"
+}
+}
+raw_text = "# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+~ start
+do animation_player.play(&\"entrada\")
+do animation_player.animation_finished
+Charlie: Bryan, ya revisamos todos los salones. No creo que el fantasma este aqui...
+do animation_player.play(&\"bryanacercandose\")
+do animation_player.animation_finished
+Bryan: Estaria aqui si no me hubieras hecho caer a ese SITIO!
+do shaker.shake()
+do animation_player.play(&\"charlieasustado\")
+do animation_player.animation_finished
+Charlie: Yo no lo sabia... Ya te dije que no fue mi intencion.
+Bryan: Por culpa de eso mi madre sigue en algun sitio y NO SE DONDE ESTA.
+do animation_player.play(&\"bryanpateaycharliecamina\")
+do animation_player.animation_finished
+Charlie: Bryan...
+do animation_player.play(&\"bryanmira\")
+do animation_player.animation_finished
+Bryan: Espera
+do animation_player.play(&\"bryantela\")
+do animation_player.animation_finished
+Bryan: Mira eso.
+Charlie: Que es?
+Bryan: Parece tela de esa sabana flotante.
+Bryan: Mira, es una tunica hecha en el taller de la aldea.
+Charlie: Uh? Pero no recuerdo haber visto una tunica flotante antes de este dia.
+Bryan: Porque no habia ninguna antes.
+Bryan: Pero es la unica pista que tenemos.
+do animation_player.play(&\"vamonos\")
+do animation_player.animation_finished
+Bryan: Vamonos.
+do animation_player.play(&\"salebryan\")
+do animation_player.animation_finished
+Charlie: ...
+do animation_player.play(&\"salecharlie\")
+do animation_player.animation_finished
+
+=> END
+"
+metadata/dialogue_manager_version = "3.7.1"

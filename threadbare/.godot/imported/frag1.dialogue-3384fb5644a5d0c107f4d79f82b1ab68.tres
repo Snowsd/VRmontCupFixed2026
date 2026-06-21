@@ -1,0 +1,131 @@
+[gd_resource type="Resource" script_class="DialogueResource" format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_4b71b"]
+
+[resource]
+script = ExtResource("1_4b71b")
+using_states = PackedStringArray()
+titles = {
+"start": "3"
+}
+character_names = PackedStringArray("Árbol Fantasma", "Tim")
+first_title = "2"
+lines = {
+"1": {
+&"id": "1",
+&"next_id": "2",
+&"type": ""
+},
+"10": {
+&"id": "10",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"group",
+&"value": Array[Dictionary]([{
+&"function": "avisar_que_el_dialogo_termino",
+&"i": 4,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 34,
+&"type": &"parens_close"
+}])])
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])
+}]),
+&"is_blocking": true
+},
+&"next_id": "11",
+&"type": "mutation"
+},
+"11": {
+&"id": "11",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"13": {
+&"id": "13",
+&"next_id": "14",
+&"type": ""
+},
+"14": {
+&"id": "14",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"2": {
+&"id": "2",
+&"next_id": "3",
+&"type": "title"
+},
+"3": {
+&"character": "Árbol Fantasma",
+&"id": "3",
+&"next_id": "4",
+&"text": "Shhh... Detente, pequeño viajero.",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Árbol Fantasma",
+&"id": "4",
+&"next_id": "5",
+&"text": "No todos los caminos son para ti.",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Tim",
+&"id": "5",
+&"next_id": "6",
+&"text": "¡Déjame pasar! Debo encontrar a mi hermana.",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Árbol Fantasma",
+&"id": "6",
+&"next_id": "7",
+&"text": "¿Por qué arriesgarte por ella? El bosque reclama lo que se pierde.",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Árbol Fantasma",
+&"id": "7",
+&"next_id": "8",
+&"text": "Pero quizás... te dejaré abrir un sendero. Si realmente tienes el valor.",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Tim",
+&"id": "8",
+&"next_id": "9",
+&"text": "Haré lo que sea.",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Árbol Fantasma",
+&"id": "9",
+&"next_id": "10",
+&"text": "Entonces, recuerda: abrir el camino no destruye la oscuridad, solo la mueve. Ve...",
+&"type": "dialogue"
+}
+}
+raw_text = "# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+~ start
+Árbol Fantasma: Shhh... Detente, pequeño viajero.
+Árbol Fantasma: No todos los caminos son para ti.
+Tim: ¡Déjame pasar! Debo encontrar a mi hermana.
+Árbol Fantasma: ¿Por qué arriesgarte por ella? El bosque reclama lo que se pierde.
+Árbol Fantasma: Pero quizás... te dejaré abrir un sendero. Si realmente tienes el valor.
+Tim: Haré lo que sea.
+Árbol Fantasma: Entonces, recuerda: abrir el camino no destruye la oscuridad, solo la mueve. Ve...
+do (avisar_que_el_dialogo_termino())
+=> END
+
+"
+metadata/dialogue_manager_version = "3.7.1"

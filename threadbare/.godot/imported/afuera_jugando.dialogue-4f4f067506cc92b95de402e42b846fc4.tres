@@ -1,0 +1,333 @@
+[gd_resource type="Resource" script_class="DialogueResource" format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_r46c1"]
+
+[resource]
+script = ExtResource("1_r46c1")
+using_states = PackedStringArray()
+titles = {
+"start": "4"
+}
+character_names = PackedStringArray("CHARLIE", "BRYAN")
+first_title = "3"
+lines = {
+"10": {
+&"character": "BRYAN",
+&"id": "10",
+&"next_id": "12",
+&"text": "Jaja, olvidalo. Ya se hace tarde, hay que irnos.",
+&"type": "dialogue"
+},
+"11": {
+&"id": "11",
+&"next_id": "12",
+&"type": ""
+},
+"12": {
+&"id": "12",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "quake"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "play",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 14,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "13",
+&"type": "mutation"
+},
+"13": {
+&"id": "13",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "shaker"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"function": "shake",
+&"i": 10,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 16,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "15",
+&"type": "mutation"
+},
+"14": {
+&"id": "14",
+&"next_id": "15",
+&"type": ""
+},
+"15": {
+&"id": "15",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"function": "play",
+&"i": 20,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 25,
+&"type": &"string",
+&"value": &"charlie_closer"
+}, {
+&"i": 42,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "16",
+&"type": "mutation"
+},
+"16": {
+&"id": "16",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"i": 20,
+&"type": &"variable",
+&"value": "animation_finished"
+}]),
+&"is_blocking": true
+},
+&"next_id": "17",
+&"type": "mutation"
+},
+"17": {
+&"character": "CHARLIE",
+&"id": "17",
+&"next_id": "18",
+&"text": "Bryan?!?! Qué fue eso?!?",
+&"type": "dialogue"
+},
+"18": {
+&"character": "BRYAN",
+&"id": "18",
+&"next_id": "19",
+&"text": "Qué raro, nunca pasan temblores en nuestra aldea.",
+&"type": "dialogue"
+},
+"19": {
+&"character": "CHARLIE",
+&"id": "19",
+&"next_id": "20",
+&"text": "Tengo miedo Bryan, crees que todos esten bien?",
+&"type": "dialogue"
+},
+"2": {
+&"id": "2",
+&"next_id": "3",
+&"type": ""
+},
+"20": {
+&"character": "BRYAN",
+&"id": "20",
+&"next_id": "21",
+&"text": "Tranquilo, ire a ver a mi madre. Tu ve a casa. No es la gran cosa..",
+&"type": "dialogue"
+},
+"21": {
+&"id": "21",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"function": "play",
+&"i": 20,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 25,
+&"type": &"string",
+&"value": &"walk_off"
+}, {
+&"i": 36,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "22",
+&"type": "mutation"
+},
+"22": {
+&"id": "22",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"i": 20,
+&"type": &"variable",
+&"value": "animation_finished"
+}]),
+&"is_blocking": true
+},
+&"next_id": "23",
+&"type": "mutation"
+},
+"23": {
+&"id": "23",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"24": {
+&"id": "24",
+&"next_id": "25",
+&"type": ""
+},
+"25": {
+&"id": "25",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"3": {
+&"id": "3",
+&"next_id": "4",
+&"type": "title"
+},
+"4": {
+&"id": "4",
+&"next_id": "5",
+&"text": "...Luego de un rato",
+&"type": "dialogue"
+},
+"5": {
+&"id": "5",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"function": "play",
+&"i": 20,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 25,
+&"type": &"string",
+&"value": &"goal"
+}, {
+&"i": 32,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "6",
+&"type": "mutation"
+},
+"6": {
+&"id": "6",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"i": 20,
+&"type": &"variable",
+&"value": "animation_finished"
+}]),
+&"is_blocking": true
+},
+&"next_id": "7",
+&"type": "mutation"
+},
+"7": {
+&"character": "CHARLIE",
+&"id": "7",
+&"next_id": "8",
+&"text": "Y marca Gullit otra vez!",
+&"type": "dialogue"
+},
+"8": {
+&"character": "BRYAN",
+&"id": "8",
+&"next_id": "9",
+&"text": "Vaya, por lo que sea, se te da mejor esto.",
+&"type": "dialogue"
+},
+"9": {
+&"character": "CHARLIE",
+&"id": "9",
+&"next_id": "10",
+&"text": "A qué te refieres?",
+&"type": "dialogue"
+}
+}
+raw_text = "# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+
+~ start
+...Luego de un rato
+do animation_player.play(&\"goal\")
+do animation_player.animation_finished
+CHARLIE: Y marca Gullit otra vez!
+BRYAN: Vaya, por lo que sea, se te da mejor esto.
+CHARLIE: A qué te refieres?
+BRYAN: Jaja, olvidalo. Ya se hace tarde, hay que irnos.
+
+do quake.play()
+do shaker.shake()
+
+do animation_player.play(&\"charlie_closer\")
+do animation_player.animation_finished
+CHARLIE: Bryan?!?! Qué fue eso?!?
+BRYAN: Qué raro, nunca pasan temblores en nuestra aldea.
+CHARLIE: Tengo miedo Bryan, crees que todos esten bien?
+BRYAN: Tranquilo, ire a ver a mi madre. Tu ve a casa. No es la gran cosa..
+do animation_player.play(&\"walk_off\")
+do animation_player.animation_finished
+=> END
+"
+metadata/dialogue_manager_version = "3.7.1"

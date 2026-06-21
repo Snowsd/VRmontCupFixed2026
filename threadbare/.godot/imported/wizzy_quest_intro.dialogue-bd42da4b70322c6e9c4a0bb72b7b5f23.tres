@@ -1,0 +1,241 @@
+[gd_resource type="Resource" script_class="DialogueResource" format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_fgex5"]
+
+[resource]
+script = ExtResource("1_fgex5")
+using_states = PackedStringArray()
+titles = {
+"start": "4"
+}
+character_names = PackedStringArray("Narrador", "Mago antiguo", "Lyrem")
+first_title = "3"
+lines = {
+"10": {
+&"character": "Lyrem",
+&"id": "10",
+&"next_id": "11",
+&"text": "¿Quien habla? y ¿Como sabes eso?",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Mago antiguo",
+&"id": "11",
+&"next_id": "12",
+&"text": "Dicen que cada 100 años las runas eligen a su portador...",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Mago antiguo",
+&"id": "12",
+&"next_id": "13",
+&"text": "Y todos los elementos empiezan a susurrar el mismo nombre...",
+&"type": "dialogue"
+},
+"13": {
+&"character": "Lyrem",
+&"id": "13",
+&"next_id": "14",
+&"text": "¿Y eso que significa?",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Mago antiguo",
+&"id": "14",
+&"next_id": "15",
+&"text": "La magia se esta desequilibrando, el Elementix se esta llenando de oscuridad",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Lyrem",
+&"id": "15",
+&"next_id": "16",
+&"text": "¿Y eso que tiene que ver conmigo?",
+&"type": "dialogue"
+},
+"16": {
+&"character": "Mago antiguo",
+&"id": "16",
+&"next_id": "17",
+&"text": "Tu eres el elegido que puede controlar todos los elementos y crear el Lunex",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Lyrem",
+&"id": "17",
+&"next_id": "18",
+&"text": "¿Lunex? Como lo consigo si no tengo poderes magicos.",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Mago antiguo",
+&"id": "18",
+&"next_id": "19",
+&"text": "Solo consigue las runas magicas, sus voces te guiaran hacia ellas",
+&"type": "dialogue"
+},
+"19": {
+&"id": "19",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"function": "play",
+&"i": 20,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 25,
+&"type": &"string",
+&"value": &"walk_off"
+}, {
+&"i": 36,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "20",
+&"type": "mutation"
+},
+"2": {
+&"id": "2",
+&"next_id": "3",
+&"type": ""
+},
+"20": {
+&"character": "Lyrem",
+&"id": "20",
+&"next_id": "21",
+&"text": "Espera no estoy listo, esperaaaaa porque me muevo solo nooooo!!!",
+&"type": "dialogue"
+},
+"21": {
+&"id": "21",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"22": {
+&"id": "22",
+&"next_id": "23",
+&"type": ""
+},
+"23": {
+&"id": "23",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"3": {
+&"id": "3",
+&"next_id": "4",
+&"type": "title"
+},
+"4": {
+&"id": "4",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"function": "play",
+&"i": 20,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 25,
+&"type": &"string",
+&"value": &"walk_on"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "5",
+&"type": "mutation"
+},
+"5": {
+&"id": "5",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"i": 20,
+&"type": &"variable",
+&"value": "animation_finished"
+}]),
+&"is_blocking": true
+},
+&"next_id": "6",
+&"type": "mutation"
+},
+"6": {
+&"character": "Narrador",
+&"id": "6",
+&"next_id": "7",
+&"text": "En un mundo donde reina la magia, los elementos son muy apreciados pero pocos pueden tener mas de uno a la vez",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Narrador",
+&"id": "7",
+&"next_id": "8",
+&"text": "Lyrem nacio con una habilidad de escuchar objetos, piensa que es inservible pero esto pronto cambiara...",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Narrador",
+&"id": "8",
+&"next_id": "9",
+&"text": "Un dia escucho la voz que provenia de la estatua de un mago antiguo...",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Mago antiguo",
+&"id": "9",
+&"next_id": "10",
+&"text": "Seguro escuchaste voces raras que mencionaban tu nombre estos ultimos dias...",
+&"type": "dialogue"
+}
+}
+raw_text = "# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+
+~ start
+do animation_player.play(&\"walk_on\")
+do animation_player.animation_finished
+Narrador: En un mundo donde reina la magia, los elementos son muy apreciados pero pocos pueden tener mas de uno a la vez
+Narrador: Lyrem nacio con una habilidad de escuchar objetos, piensa que es inservible pero esto pronto cambiara...
+Narrador: Un dia escucho la voz que provenia de la estatua de un mago antiguo...
+Mago antiguo: Seguro escuchaste voces raras que mencionaban tu nombre estos ultimos dias...
+Lyrem: ¿Quien habla? y ¿Como sabes eso?
+Mago antiguo: Dicen que cada 100 años las runas eligen a su portador...
+Mago antiguo: Y todos los elementos empiezan a susurrar el mismo nombre...
+Lyrem: ¿Y eso que significa?
+Mago antiguo: La magia se esta desequilibrando, el Elementix se esta llenando de oscuridad
+Lyrem: ¿Y eso que tiene que ver conmigo?
+Mago antiguo: Tu eres el elegido que puede controlar todos los elementos y crear el Lunex
+Lyrem: ¿Lunex? Como lo consigo si no tengo poderes magicos.
+Mago antiguo: Solo consigue las runas magicas, sus voces te guiaran hacia ellas
+do animation_player.play(&\"walk_off\")
+Lyrem: Espera no estoy listo, esperaaaaa porque me muevo solo nooooo!!!
+=> END
+"
+metadata/dialogue_manager_version = "3.7.1"

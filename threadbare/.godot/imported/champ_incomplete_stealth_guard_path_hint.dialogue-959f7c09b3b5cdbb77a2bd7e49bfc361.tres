@@ -1,0 +1,78 @@
+[gd_resource type="Resource" script_class="DialogueResource" format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_lj3o5"]
+
+[resource]
+script = ExtResource("1_lj3o5")
+using_states = PackedStringArray()
+titles = {
+"start": "3"
+}
+character_names = PackedStringArray("Bill")
+first_title = "2"
+lines = {
+"1": {
+&"id": "1",
+&"next_id": "2",
+&"type": ""
+},
+"2": {
+&"id": "2",
+&"next_id": "3",
+&"type": "title"
+},
+"3": {
+&"id": "3",
+&"next_id": "4",
+&"text": "WHO ARE YOU?",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Bill",
+&"id": "4",
+&"next_id": "5",
+&"text": "I'm Bill the Pill, Warrior of the Norse Gods!",
+&"type": "dialogue"
+},
+"5": {
+&"id": "5",
+&"next_id": "6",
+&"text": "I would stop you, but I actually don't work here. Don't tell anybody.",
+&"type": "dialogue"
+},
+"6": {
+&"id": "6",
+&"next_id": "7",
+&"text": "Go take the Thread if you want.",
+&"type": "dialogue"
+},
+"7": {
+&"id": "7",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"8": {
+&"id": "8",
+&"next_id": "9",
+&"type": ""
+},
+"9": {
+&"id": "9",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+}
+}
+raw_text = "# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+~ start
+WHO ARE YOU?
+Bill: I'm Bill the Pill, Warrior of the Norse Gods!
+I would stop you, but I actually don't work here. Don't tell anybody.
+Go take the Thread if you want.
+=> END
+"
+metadata/dialogue_manager_version = "3.7.1"

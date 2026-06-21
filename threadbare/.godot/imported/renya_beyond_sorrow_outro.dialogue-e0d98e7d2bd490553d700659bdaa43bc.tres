@@ -1,0 +1,117 @@
+[gd_resource type="Resource" script_class="DialogueResource" format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_1scpi"]
+
+[resource]
+script = ExtResource("1_1scpi")
+using_states = PackedStringArray()
+titles = {
+"start": "3"
+}
+character_names = PackedStringArray("Naiya", "Renya")
+first_title = "2"
+lines = {
+"1": {
+&"id": "1",
+&"next_id": "2",
+&"type": ""
+},
+"10": {
+&"character": "Naiya",
+&"id": "10",
+&"next_id": "11",
+&"text": "Renya regresó al Telar con las manos vacías, pero el corazón lleno de comprensión.",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Naiya",
+&"id": "11",
+&"next_id": "13",
+&"text": "Y así tejimos una historia más, pequeño hilito sabio.
+Una historia que no busca olvidar, sino aprender a sentir.",
+&"type": "dialogue"
+},
+"13": {
+&"id": "13",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"14": {
+&"id": "14",
+&"next_id": "15",
+&"type": ""
+},
+"15": {
+&"id": "15",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"2": {
+&"id": "2",
+&"next_id": "3",
+&"type": "title"
+},
+"3": {
+&"character": "Naiya",
+&"id": "3",
+&"next_id": "4",
+&"text": "Así, tras conocer de cerca las fases del duelo, Renya entendió que el dolor no se vence… se abraza y se comprende.",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Naiya",
+&"id": "4",
+&"next_id": "5",
+&"text": "El Telar no necesitaba control, sino ser escuchado y cuando volvió a brillar, también lo hicieron las almas.",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Naiya",
+&"id": "5",
+&"next_id": "6",
+&"text": "Ya no temen avanzar, porque esta vez fueron comprendidas, no forzadas.",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Renya",
+&"id": "6",
+&"next_id": "8",
+&"text": "La solución era sencilla, pero me rehusé a verla.
+Cada alma, incluso la mía, necesitaba su tiempo.",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Renya",
+&"id": "8",
+&"next_id": "9",
+&"text": "Si alguna vez te pierdes entre tus emociones, no corras y no temas si tus pasos son lentos, ni si vuelves al inicio. Cada emoción tiene su propio ritmo… y eso también está bien.",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Renya",
+&"id": "9",
+&"next_id": "10",
+&"text": "Deja que ellas te muestren cuándo avanzar.",
+&"type": "dialogue"
+}
+}
+raw_text = "# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+~ start
+Naiya: Así, tras conocer de cerca las fases del duelo, Renya entendió que el dolor no se vence… se abraza y se comprende.
+Naiya: El Telar no necesitaba control, sino ser escuchado y cuando volvió a brillar, también lo hicieron las almas.
+Naiya: Ya no temen avanzar, porque esta vez fueron comprendidas, no forzadas.
+Renya: La solución era sencilla, pero me rehusé a verla.
+	Cada alma, incluso la mía, necesitaba su tiempo.
+Renya: Si alguna vez te pierdes entre tus emociones, no corras y no temas si tus pasos son lentos, ni si vuelves al inicio. Cada emoción tiene su propio ritmo… y eso también está bien.
+Renya: Deja que ellas te muestren cuándo avanzar.
+Naiya: Renya regresó al Telar con las manos vacías, pero el corazón lleno de comprensión.
+Naiya: Y así tejimos una historia más, pequeño hilito sabio.
+	Una historia que no busca olvidar, sino aprender a sentir.
+=> END
+"
+metadata/dialogue_manager_version = "3.7.1"

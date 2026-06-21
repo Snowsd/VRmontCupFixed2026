@@ -1,0 +1,73 @@
+[gd_resource type="Resource" script_class="DialogueResource" format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_qdy3a"]
+
+[resource]
+script = ExtResource("1_qdy3a")
+using_states = PackedStringArray()
+titles = {
+"start": "3"
+}
+character_names = PackedStringArray("Charlie", "Bryan")
+first_title = "2"
+lines = {
+"1": {
+&"id": "1",
+&"next_id": "2",
+&"type": ""
+},
+"2": {
+&"id": "2",
+&"next_id": "3",
+&"type": "title"
+},
+"3": {
+&"character": "Charlie",
+&"id": "3",
+&"next_id": "4",
+&"text": "BRYAN! Ya estas subiendo??",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Bryan",
+&"id": "4",
+&"next_id": "5",
+&"text": "POR FIN. GRACIAS!",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Bryan",
+&"id": "5",
+&"next_id": "6",
+&"text": "Ahi subo Charlie. Esperame!",
+&"type": "dialogue"
+},
+"6": {
+&"id": "6",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"7": {
+&"id": "7",
+&"next_id": "8",
+&"type": ""
+},
+"8": {
+&"id": "8",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+}
+}
+raw_text = "# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+~ start
+Charlie: BRYAN! Ya estas subiendo??
+Bryan: POR FIN. GRACIAS!
+Bryan: Ahi subo Charlie. Esperame!
+=> END
+"
+metadata/dialogue_manager_version = "3.7.1"

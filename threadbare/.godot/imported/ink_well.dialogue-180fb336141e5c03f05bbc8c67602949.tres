@@ -1,0 +1,96 @@
+[gd_resource type="Resource" script_class="DialogueResource" format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_c1edy"]
+
+[resource]
+script = ExtResource("1_c1edy")
+using_states = PackedStringArray()
+titles = {
+"start": "3",
+"well_done": "7"
+}
+character_names = PackedStringArray("Musician")
+first_title = "2"
+lines = {
+"1": {
+&"id": "1",
+&"next_id": "2",
+&"type": ""
+},
+"10": {
+&"id": "10",
+&"next_id": "11",
+&"type": ""
+},
+"11": {
+&"id": "11",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"2": {
+&"id": "2",
+&"next_id": "3",
+&"type": "title"
+},
+"3": {
+&"character": "Musician",
+&"id": "3",
+&"next_id": "4",
+&"text": "The songwriters wrote such colorful songs, before. But the InkDrinkers consumed all of the ink. Restore the ink to the matching jars.",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Musician",
+&"id": "4",
+&"next_id": "5",
+&"text": "But be careful, they spray ink!",
+&"type": "dialogue"
+},
+"5": {
+&"id": "5",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"6": {
+&"id": "6",
+&"next_id": "7",
+&"type": "title"
+},
+"7": {
+&"character": "Musician",
+&"id": "7",
+&"next_id": "8",
+&"text": "Well done StoryWeaver, you have collected enough ink for new songs and stories. Everyone will rejoice.",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Musician",
+&"id": "8",
+&"next_id": "9",
+&"text": "I need to return to the Song Sanctuary to protect the magical stones, but you should return to Fray's End. Beware: the path back is riddled with StoryVores. Stay strong in spirit, and move quickly!",
+&"type": "dialogue"
+},
+"9": {
+&"id": "9",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+}
+}
+raw_text = "# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+~ start
+Musician: The songwriters wrote such colorful songs, before. But the InkDrinkers consumed all of the ink. Restore the ink to the matching jars.
+Musician: But be careful, they spray ink!
+=> END
+~ well_done
+Musician: Well done StoryWeaver, you have collected enough ink for new songs and stories. Everyone will rejoice.
+Musician: I need to return to the Song Sanctuary to protect the magical stones, but you should return to Fray's End. Beware: the path back is riddled with StoryVores. Stay strong in spirit, and move quickly!
+=> END
+"
+metadata/dialogue_manager_version = "3.7.1"

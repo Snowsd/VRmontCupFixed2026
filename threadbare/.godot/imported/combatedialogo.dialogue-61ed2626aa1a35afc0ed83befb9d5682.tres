@@ -1,0 +1,841 @@
+[gd_resource type="Resource" script_class="DialogueResource" format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_rhbv6"]
+
+[resource]
+script = ExtResource("1_rhbv6")
+using_states = PackedStringArray()
+titles = {
+"start": "3"
+}
+character_names = PackedStringArray("Bryan", "Charlie")
+first_title = "2"
+lines = {
+"1": {
+&"id": "1",
+&"next_id": "2",
+&"type": ""
+},
+"10": {
+&"character": "Charlie",
+&"id": "10",
+&"next_id": "11",
+&"text": "MI GATOOOO.",
+&"type": "dialogue"
+},
+"11": {
+&"id": "11",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"function": "play",
+&"i": 20,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 25,
+&"type": &"string",
+&"value": &"charliecorre"
+}, {
+&"i": 40,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "12",
+&"type": "mutation"
+},
+"12": {
+&"id": "12",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"i": 20,
+&"type": &"variable",
+&"value": "animation_finished"
+}]),
+&"is_blocking": true
+},
+&"next_id": "13",
+&"type": "mutation"
+},
+"13": {
+&"character": "Bryan",
+&"id": "13",
+&"next_id": "14",
+&"text": "...",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Bryan",
+&"id": "14",
+&"next_id": "15",
+&"text": "(No veo a mi madre...)",
+&"type": "dialogue"
+},
+"15": {
+&"id": "15",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"function": "play",
+&"i": 20,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 25,
+&"type": &"string",
+&"value": &"charlievuelve"
+}, {
+&"i": 41,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "16",
+&"type": "mutation"
+},
+"16": {
+&"id": "16",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"i": 20,
+&"type": &"variable",
+&"value": "animation_finished"
+}]),
+&"is_blocking": true
+},
+&"next_id": "17",
+&"type": "mutation"
+},
+"17": {
+&"character": "Charlie",
+&"id": "17",
+&"next_id": "18",
+&"text": "Mision cumplida!",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Bryan",
+&"id": "18",
+&"next_id": "19",
+&"text": "Viste si la tunica estaba aqui?",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Bryan",
+&"id": "19",
+&"next_id": "20",
+&"text": "...o a mi mama?",
+&"type": "dialogue"
+},
+"2": {
+&"id": "2",
+&"next_id": "3",
+&"type": "title"
+},
+"20": {
+&"character": "Charlie",
+&"id": "20",
+&"next_id": "21",
+&"text": "...no. No vi a nadie mas Bryan.",
+&"type": "dialogue"
+},
+"21": {
+&"id": "21",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"function": "play",
+&"i": 20,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 25,
+&"type": &"string",
+&"value": &"charliereconforta"
+}, {
+&"i": 45,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "22",
+&"type": "mutation"
+},
+"22": {
+&"id": "22",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"i": 20,
+&"type": &"variable",
+&"value": "animation_finished"
+}]),
+&"is_blocking": true
+},
+&"next_id": "24",
+&"type": "mutation"
+},
+"23": {
+&"id": "23",
+&"next_id": "24",
+&"type": ""
+},
+"24": {
+&"character": "Charlie",
+&"id": "24",
+&"next_id": "25",
+&"text": "Oye, mira. Ya encontramos a mi gato.",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Charlie",
+&"id": "25",
+&"next_id": "26",
+&"text": "Significa que tambien encontraremos a tu madre.",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Bryan",
+&"id": "26",
+&"next_id": "27",
+&"text": "...tienes razon.",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Bryan",
+&"id": "27",
+&"next_id": "28",
+&"text": "Un segundo.",
+&"type": "dialogue"
+},
+"28": {
+&"id": "28",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"function": "play",
+&"i": 20,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 25,
+&"type": &"string",
+&"value": &"bryanpalo"
+}, {
+&"i": 37,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "29",
+&"type": "mutation"
+},
+"29": {
+&"id": "29",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"i": 20,
+&"type": &"variable",
+&"value": "animation_finished"
+}]),
+&"is_blocking": true
+},
+&"next_id": "30",
+&"type": "mutation"
+},
+"3": {
+&"id": "3",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"function": "play",
+&"i": 20,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 25,
+&"type": &"string",
+&"value": &"entran"
+}, {
+&"i": 34,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "4",
+&"type": "mutation"
+},
+"30": {
+&"character": "Bryan",
+&"id": "30",
+&"next_id": "31",
+&"text": "La proxima vez que vea a esa cosa, le dare su merecido.",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Bryan",
+&"id": "31",
+&"next_id": "32",
+&"text": "Vamonos.",
+&"type": "dialogue"
+},
+"32": {
+&"id": "32",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"function": "play",
+&"i": 20,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 25,
+&"type": &"string",
+&"value": &"sevan"
+}, {
+&"i": 33,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "33",
+&"type": "mutation"
+},
+"33": {
+&"id": "33",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"i": 20,
+&"type": &"variable",
+&"value": "animation_finished"
+}]),
+&"is_blocking": true
+},
+&"next_id": "35",
+&"type": "mutation"
+},
+"34": {
+&"id": "34",
+&"next_id": "35",
+&"type": ""
+},
+"35": {
+&"id": "35",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "quake"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "play",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 14,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "36",
+&"type": "mutation"
+},
+"36": {
+&"id": "36",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "shaker"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"function": "shake",
+&"i": 10,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 16,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "37",
+&"type": "mutation"
+},
+"37": {
+&"id": "37",
+&"next_id": "38",
+&"text": "...",
+&"type": "dialogue"
+},
+"38": {
+&"id": "38",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "quake"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "play",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 14,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "39",
+&"type": "mutation"
+},
+"39": {
+&"id": "39",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "shaker"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"function": "shake",
+&"i": 10,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 16,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "40",
+&"type": "mutation"
+},
+"4": {
+&"id": "4",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"i": 20,
+&"type": &"variable",
+&"value": "animation_finished"
+}]),
+&"is_blocking": true
+},
+&"next_id": "5",
+&"type": "mutation"
+},
+"40": {
+&"id": "40",
+&"next_id": "42",
+&"text": "...",
+&"type": "dialogue"
+},
+"41": {
+&"id": "41",
+&"next_id": "42",
+&"type": ""
+},
+"42": {
+&"id": "42",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "quake"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "play",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 14,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "43",
+&"type": "mutation"
+},
+"43": {
+&"id": "43",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "shaker"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"function": "shake",
+&"i": 10,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 16,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "44",
+&"type": "mutation"
+},
+"44": {
+&"id": "44",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"function": "play",
+&"i": 20,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 25,
+&"type": &"string",
+&"value": &"maloaparece"
+}, {
+&"i": 39,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "45",
+&"type": "mutation"
+},
+"45": {
+&"id": "45",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"i": 20,
+&"type": &"variable",
+&"value": "animation_finished"
+}]),
+&"is_blocking": true
+},
+&"next_id": "47",
+&"type": "mutation"
+},
+"46": {
+&"id": "46",
+&"next_id": "47",
+&"type": ""
+},
+"47": {
+&"character": "Charlie",
+&"id": "47",
+&"next_id": "48",
+&"text": "que... QUE???!?!",
+&"type": "dialogue"
+},
+"48": {
+&"character": "Bryan",
+&"id": "48",
+&"next_id": "49",
+&"text": "CUIDADO, no podemos movernos mucho.",
+&"type": "dialogue"
+},
+"49": {
+&"character": "Charlie",
+&"id": "49",
+&"next_id": "50",
+&"text": "QUE ES ESA COSA???",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Bryan",
+&"id": "5",
+&"next_id": "6",
+&"text": "De nuevo todo esta oscuro.",
+&"type": "dialogue"
+},
+"50": {
+&"character": "Bryan",
+&"id": "50",
+&"next_id": "51",
+&"text": "Sea lo que sea, va a hacer que nos caigamos si no nos defendemos.",
+&"type": "dialogue"
+},
+"51": {
+&"character": "Bryan",
+&"id": "51",
+&"next_id": "52",
+&"text": "EN GUARDIA!",
+&"type": "dialogue"
+},
+"52": {
+&"character": "Charlie",
+&"id": "52",
+&"next_id": "53",
+&"text": "gatito salvame...",
+&"type": "dialogue"
+},
+"53": {
+&"id": "53",
+&"next_id": "54",
+&"text": "Bryan y Charlie estan en peligro!",
+&"type": "dialogue"
+},
+"54": {
+&"id": "54",
+&"next_id": "55",
+&"text": "Usa la tecla A o la flecha (<--) izquierda para que el gatito de Charlie lo defienda!",
+&"type": "dialogue"
+},
+"55": {
+&"id": "55",
+&"next_id": "56",
+&"text": "Usa la tecla D o la flecha (-->) derecha para que Bryan devuelva el golpe con su palo!",
+&"type": "dialogue"
+},
+"56": {
+&"id": "56",
+&"next_id": "57",
+&"text": "Derrota al jefe devolviendo todos los golpes!",
+&"type": "dialogue"
+},
+"57": {
+&"id": "57",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"58": {
+&"id": "58",
+&"next_id": "59",
+&"type": ""
+},
+"59": {
+&"id": "59",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"6": {
+&"character": "Bryan",
+&"id": "6",
+&"next_id": "7",
+&"text": "Oye...",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Bryan",
+&"id": "7",
+&"next_id": "8",
+&"text": "Que es eso?",
+&"type": "dialogue"
+},
+"8": {
+&"id": "8",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"function": "play",
+&"i": 20,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 25,
+&"type": &"string",
+&"value": &"enfoquegato"
+}, {
+&"i": 39,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "9",
+&"type": "mutation"
+},
+"9": {
+&"id": "9",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "animation_player"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"i": 20,
+&"type": &"variable",
+&"value": "animation_finished"
+}]),
+&"is_blocking": true
+},
+&"next_id": "10",
+&"type": "mutation"
+}
+}
+raw_text = "# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+~ start
+do animation_player.play(&\"entran\")
+do animation_player.animation_finished
+Bryan: De nuevo todo esta oscuro.
+Bryan: Oye...
+Bryan: Que es eso?
+do animation_player.play(&\"enfoquegato\")
+do animation_player.animation_finished
+Charlie: MI GATOOOO.
+do animation_player.play(&\"charliecorre\")
+do animation_player.animation_finished
+Bryan: ...
+Bryan: (No veo a mi madre...)
+do animation_player.play(&\"charlievuelve\")
+do animation_player.animation_finished
+Charlie: Mision cumplida!
+Bryan: Viste si la tunica estaba aqui?
+Bryan: ...o a mi mama?
+Charlie: ...no. No vi a nadie mas Bryan.
+do animation_player.play(&\"charliereconforta\")
+do animation_player.animation_finished
+
+Charlie: Oye, mira. Ya encontramos a mi gato.
+Charlie: Significa que tambien encontraremos a tu madre.
+Bryan: ...tienes razon.
+Bryan: Un segundo.
+do animation_player.play(&\"bryanpalo\")
+do animation_player.animation_finished
+Bryan: La proxima vez que vea a esa cosa, le dare su merecido.
+Bryan: Vamonos.
+do animation_player.play(&\"sevan\")
+do animation_player.animation_finished
+
+do quake.play()
+do shaker.shake()
+...
+do quake.play()
+do shaker.shake()
+...
+
+do quake.play()
+do shaker.shake()
+do animation_player.play(&\"maloaparece\")
+do animation_player.animation_finished
+
+Charlie: que... QUE???!?!
+Bryan: CUIDADO, no podemos movernos mucho.
+Charlie: QUE ES ESA COSA???
+Bryan: Sea lo que sea, va a hacer que nos caigamos si no nos defendemos.
+Bryan: EN GUARDIA!
+Charlie: gatito salvame...
+Bryan y Charlie estan en peligro!
+Usa la tecla A o la flecha (<--) izquierda para que el gatito de Charlie lo defienda!
+Usa la tecla D o la flecha (-->) derecha para que Bryan devuelva el golpe con su palo!
+Derrota al jefe devolviendo todos los golpes!
+=> END
+"
+metadata/dialogue_manager_version = "3.7.1"

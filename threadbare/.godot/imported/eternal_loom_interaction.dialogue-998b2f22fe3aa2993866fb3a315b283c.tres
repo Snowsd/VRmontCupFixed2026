@@ -1,0 +1,146 @@
+[gd_resource type="Resource" script_class="DialogueResource" format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_5g644"]
+
+[resource]
+script = ExtResource("1_5g644")
+using_states = PackedStringArray()
+titles = {
+"have_threads": "12",
+"no_threads": "7",
+"welcome": "3"
+}
+character_names = PackedStringArray()
+first_title = "2"
+lines = {
+"1": {
+&"id": "1",
+&"next_id": "2",
+&"type": ""
+},
+"10": {
+&"id": "10",
+&"next_id": "11",
+&"type": ""
+},
+"11": {
+&"id": "11",
+&"next_id": "12",
+&"type": "title"
+},
+"12": {
+&"id": "12",
+&"is_snippet": true,
+&"next_id": "3",
+&"next_id_after": "13",
+&"type": "goto"
+},
+"13": {
+&"id": "13",
+&"next_id": "14",
+&"text": "The Memory, Imagination, and Spirit threads are ready to be incorporated into the loom!",
+&"type": "dialogue"
+},
+"14": {
+&"id": "14",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "on_offering_succeeded",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 25,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "15",
+&"type": "mutation"
+},
+"15": {
+&"id": "15",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"16": {
+&"id": "16",
+&"next_id": "17",
+&"type": ""
+},
+"17": {
+&"id": "17",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"2": {
+&"id": "2",
+&"next_id": "3",
+&"type": "title"
+},
+"3": {
+&"id": "3",
+&"next_id": "4",
+&"text": "The Eternal Loom welcomes you, StoryWeaver. Threads you collect help to repair the fabric of our world.",
+&"type": "dialogue"
+},
+"4": {
+&"id": "4",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"5": {
+&"id": "5",
+&"next_id": "6",
+&"type": ""
+},
+"6": {
+&"id": "6",
+&"next_id": "7",
+&"type": "title"
+},
+"7": {
+&"id": "7",
+&"is_snippet": true,
+&"next_id": "3",
+&"next_id_after": "8",
+&"type": "goto"
+},
+"8": {
+&"id": "8",
+&"next_id": "9",
+&"text": "It seems you are lacking the threads of Memory, Imagination, and Spirit... try coming back later.",
+&"type": "dialogue"
+},
+"9": {
+&"id": "9",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+}
+}
+raw_text = "# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+~ welcome
+The Eternal Loom welcomes you, StoryWeaver. Threads you collect help to repair the fabric of our world.
+=> END
+
+~ no_threads
+=>< welcome
+It seems you are lacking the threads of Memory, Imagination, and Spirit... try coming back later.
+=> END
+
+~ have_threads
+=>< welcome
+The Memory, Imagination, and Spirit threads are ready to be incorporated into the loom!
+do on_offering_succeeded()
+=> END
+"
+metadata/dialogue_manager_version = "3.7.1"
